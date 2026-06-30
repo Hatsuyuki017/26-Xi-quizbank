@@ -17,3 +17,5 @@ __pycache__/
 *_compact.json
 
 # Source files included in repo
+.claude/
+*.docx
