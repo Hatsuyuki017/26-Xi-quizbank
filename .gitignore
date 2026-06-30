@@ -1,0 +1,22 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+
+# Temp files
+*_compact.json
+题库提取.txt
+
+# Binary source files (not needed in repo)
+*.docx
+*.pdf

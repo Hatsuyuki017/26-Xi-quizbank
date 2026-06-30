@@ -1,0 +1,3548 @@
+[
+  {
+    "id": "single-1",
+    "type": "single",
+    "sourceOrder": 1,
+    "question": "(）是应对国家安全形势新变化新趋势的战略选择，是全面贯彻落实总体国家安全观的重大举措。",
+    "options": [
+      {
+        "label": "A",
+        "text": "平安中国"
+      },
+      {
+        "label": "B",
+        "text": "国家安全体系"
+      },
+      {
+        "label": "C",
+        "text": "人类命运共同体"
+      },
+      {
+        "label": "D",
+        "text": "构建新安全格局"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-2",
+    "type": "single",
+    "sourceOrder": 2,
+    "question": "“六个必须坚持”中体现历史唯物主义群众史观的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "必须坚持人民至上"
+      },
+      {
+        "label": "B",
+        "text": "必须坚持自立自信"
+      },
+      {
+        "label": "C",
+        "text": "必须坚持守正创新"
+      },
+      {
+        "label": "D",
+        "text": "必须坚持问题导向"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-3",
+    "type": "single",
+    "sourceOrder": 3,
+    "question": "“六个必须坚持”中体现客观规律性与主观能动性有机结合的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "必须坚持人民至上"
+      },
+      {
+        "label": "B",
+        "text": "必须坚持自立自信"
+      },
+      {
+        "label": "C",
+        "text": "必须坚持守正创新"
+      },
+      {
+        "label": "D",
+        "text": "必须坚持问题导向"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-4",
+    "type": "single",
+    "sourceOrder": 4,
+    "question": "“六个必须坚持”中体现矛盾的普遍性与客观性的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "必须坚持人民至上"
+      },
+      {
+        "label": "B",
+        "text": "必须坚持自立自信"
+      },
+      {
+        "label": "C",
+        "text": "必须坚持守正创新"
+      },
+      {
+        "label": "D",
+        "text": "必须坚持问题导向"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-5",
+    "type": "single",
+    "sourceOrder": 5,
+    "question": "中国特色大国外交坚持（），把人民利益放在首位。",
+    "options": [
+      {
+        "label": "A",
+        "text": "国家至上"
+      },
+      {
+        "label": "B",
+        "text": "权力至上"
+      },
+      {
+        "label": "C",
+        "text": "利益至上"
+      },
+      {
+        "label": "D",
+        "text": "外交为民"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-6",
+    "type": "single",
+    "sourceOrder": 6,
+    "question": "中国特色大国外交的根本任务是坚决维护国家主权、安全、（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "文化利益"
+      },
+      {
+        "label": "B",
+        "text": "制度利益"
+      },
+      {
+        "label": "C",
+        "text": "发展利益"
+      },
+      {
+        "label": "D",
+        "text": "政治利益"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-7",
+    "type": "single",
+    "sourceOrder": 7,
+    "question": "中国特色社会主义政治发展道路，是近代以来中国人民长期奋斗历史逻辑、理论逻辑、实践逻辑的必然结果，是坚持（）、践行党的根本宗旨的必然要求。",
+    "options": [
+      {
+        "label": "A",
+        "text": "以人民为中心"
+      },
+      {
+        "label": "B",
+        "text": "全心全意为人民服务"
+      },
+      {
+        "label": "C",
+        "text": "党的本质属性"
+      },
+      {
+        "label": "D",
+        "text": "党的全面领导"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-8",
+    "type": "single",
+    "sourceOrder": 8,
+    "question": "习近平指出：“一个国家的（）决定于这个国家的经济社会基础，同时又反作用于这个国家的经济社会基础，乃至于起到决定性作用。”",
+    "options": [
+      {
+        "label": "A",
+        "text": "政治制度"
+      },
+      {
+        "label": "B",
+        "text": "经济结构"
+      },
+      {
+        "label": "C",
+        "text": "社会结构"
+      },
+      {
+        "label": "D",
+        "text": "文化体制"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-9",
+    "type": "single",
+    "sourceOrder": 9,
+    "question": "习近平指出：“中国特色社会主义制度是一个严密完整的科学制度体系，起四梁八柱作用的是根本制度、基本制度重要制度，其中具有统领地位的是（ ）。”",
+    "options": [
+      {
+        "label": "A",
+        "text": "人民代表大会制度"
+      },
+      {
+        "label": "B",
+        "text": "党的领导制度"
+      },
+      {
+        "label": "C",
+        "text": "民主集中制"
+      },
+      {
+        "label": "D",
+        "text": "社会主义制度"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-10",
+    "type": "single",
+    "sourceOrder": 10,
+    "question": "习近平指出：“我们讲宗旨，讲了很多话，说到底还是（ ）这句话。”",
+    "options": [
+      {
+        "label": "A",
+        "text": "以人民为中心"
+      },
+      {
+        "label": "B",
+        "text": "坚持人民主体地位"
+      },
+      {
+        "label": "C",
+        "text": "为人民服务"
+      },
+      {
+        "label": "D",
+        "text": "群众路线是根本工作路线"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-11",
+    "type": "single",
+    "sourceOrder": 11,
+    "question": "习近平新时代中国特色社会主义思想的世界观、方法论是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "“十个明确”"
+      },
+      {
+        "label": "B",
+        "text": "“六个必须坚持”"
+      },
+      {
+        "label": "C",
+        "text": "“十四个坚持”"
+      },
+      {
+        "label": "D",
+        "text": "“十三个方面成就”"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-12",
+    "type": "single",
+    "sourceOrder": 12,
+    "question": "习近平新时代中国特色社会主义思想的主体内容是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "“十个明确”"
+      },
+      {
+        "label": "B",
+        "text": "“六个必须坚持”"
+      },
+      {
+        "label": "C",
+        "text": "“十四个坚持”"
+      },
+      {
+        "label": "D",
+        "text": "“十三个方面成就”"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-13",
+    "type": "single",
+    "sourceOrder": 13,
+    "question": "二十届四中全会公报指出，加大保障和改善民生力度，坚持（ ）的原则。",
+    "options": [
+      {
+        "label": "A",
+        "text": "尽力而为、量力而行"
+      },
+      {
+        "label": "B",
+        "text": "公平优先、效率兼顾"
+      },
+      {
+        "label": "C",
+        "text": "政府主导、市场参与"
+      },
+      {
+        "label": "D",
+        "text": "全面覆盖、重点突出"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-14",
+    "type": "single",
+    "sourceOrder": 14,
+    "question": "二十届四中全会公报指出，构建以（ ）为骨干的现代化产业体系。",
+    "options": [
+      {
+        "label": "A",
+        "text": "现代服务业"
+      },
+      {
+        "label": "B",
+        "text": "先进制造业"
+      },
+      {
+        "label": "C",
+        "text": "战略性新兴产业"
+      },
+      {
+        "label": "D",
+        "text": "未来产业"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-15",
+    "type": "single",
+    "sourceOrder": 15,
+    "question": "会治理的重心必须向（）下移。",
+    "options": [
+      {
+        "label": "A",
+        "text": "基层"
+      },
+      {
+        "label": "B",
+        "text": "社区"
+      },
+      {
+        "label": "C",
+        "text": "城乡社区"
+      },
+      {
+        "label": "D",
+        "text": "乡村"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-16",
+    "type": "single",
+    "sourceOrder": 16,
+    "question": "党的二十大报告指出，要坚持不懈用（）凝心铸魂，全面加强党的思想建设，加强理想信念教育，引导全党牢记党的宗旨，自觉做共产主义远大理想和中国特色社会主义共同理想的坚定信仰者和忠实实践者。",
+    "options": [
+      {
+        "label": "A",
+        "text": "马克思主义理论"
+      },
+      {
+        "label": "B",
+        "text": "中国特色社会主义理论体系"
+      },
+      {
+        "label": "C",
+        "text": "习近平新时代中国特色社会主义思想"
+      },
+      {
+        "label": "D",
+        "text": "毛泽东思想"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-17",
+    "type": "single",
+    "sourceOrder": 17,
+    "question": "党的十八届（）全会首次提出“推进法治中国建设”的目标并作出重大任务部署，更加突出法治国家、法治政府、法治社会的有机统一，更加突出法治建设的整体性和系统性，更加突出推动法治建设各个环节相互配合、协同运转。",
+    "options": [
+      {
+        "label": "A",
+        "text": "一中"
+      },
+      {
+        "label": "B",
+        "text": "二中"
+      },
+      {
+        "label": "C",
+        "text": "三中"
+      },
+      {
+        "label": "D",
+        "text": "四中"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-18",
+    "type": "single",
+    "sourceOrder": 18,
+    "question": "全景展示习近平新时代中国特色社会主义思想的理论与实践成果的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "“十个明确”"
+      },
+      {
+        "label": "B",
+        "text": "“六个必须坚持”"
+      },
+      {
+        "label": "C",
+        "text": "“十四个坚持”"
+      },
+      {
+        "label": "D",
+        "text": "“十三个方面成就”"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-19",
+    "type": "single",
+    "sourceOrder": 19,
+    "question": "全面从严治党，核心是（），基础在全面，关键在严，要害在治。",
+    "options": [
+      {
+        "label": "A",
+        "text": "加强党的领导"
+      },
+      {
+        "label": "B",
+        "text": "全面深化改革"
+      },
+      {
+        "label": "C",
+        "text": "全面依法治国"
+      },
+      {
+        "label": "D",
+        "text": "全面推进现代化"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-20",
+    "type": "single",
+    "sourceOrder": 20,
+    "question": "全面依法治国要加快形成严密的法治监督体系。法治监督体系以规范和约束（）为重点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "党的领导"
+      },
+      {
+        "label": "B",
+        "text": "政府行政"
+      },
+      {
+        "label": "C",
+        "text": "领导干部"
+      },
+      {
+        "label": "D",
+        "text": "公权力的运行"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-21",
+    "type": "single",
+    "sourceOrder": 21,
+    "question": "全面推进依法治国涉及很多方面，在实际工作中必须有一个总揽全局、牵引各方的总抓手，这个总抓手就是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "建设中国特色社会主义法治体系"
+      },
+      {
+        "label": "B",
+        "text": "坚持党的全面领导"
+      },
+      {
+        "label": "C",
+        "text": "坚持以人民为中心"
+      },
+      {
+        "label": "D",
+        "text": "建设法治中国"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-22",
+    "type": "single",
+    "sourceOrder": 22,
+    "question": "全面推进国防和军队现代化的战略安排中，到（）年基本实现国防和军队现代化。",
+    "options": [
+      {
+        "label": "A",
+        "text": "2025"
+      },
+      {
+        "label": "B",
+        "text": "2035"
+      },
+      {
+        "label": "C",
+        "text": "2049"
+      },
+      {
+        "label": "D",
+        "text": "2050"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-23",
+    "type": "single",
+    "sourceOrder": 23,
+    "question": "全面推进国防和军队现代化的战略安排中，到（）把人民军队全面建成世界一流军队。",
+    "options": [
+      {
+        "label": "A",
+        "text": "2030"
+      },
+      {
+        "label": "B",
+        "text": "3035"
+      },
+      {
+        "label": "C",
+        "text": "2040"
+      },
+      {
+        "label": "D",
+        "text": "本世纪中叶"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-24",
+    "type": "single",
+    "sourceOrder": 24,
+    "question": "军队的根本职能是打仗，必须树立（）这个唯一的根本标准，全面加强练兵备战。",
+    "options": [
+      {
+        "label": "A",
+        "text": "改革强军"
+      },
+      {
+        "label": "B",
+        "text": "战斗力"
+      },
+      {
+        "label": "C",
+        "text": "科技强军"
+      },
+      {
+        "label": "D",
+        "text": "人才强军"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-25",
+    "type": "single",
+    "sourceOrder": 25,
+    "question": "列选项中，哪一项与“反腐败是最彻底的自我革命”所体现的核心精神最为契合？（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "君子求诸己，小人求诸人"
+      },
+      {
+        "label": "B",
+        "text": "法令行则国治，法令弛则国乱"
+      },
+      {
+        "label": "C",
+        "text": "打铁必须自身硬"
+      },
+      {
+        "label": "D",
+        "text": "水能载舟，亦能覆舟"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-26",
+    "type": "single",
+    "sourceOrder": 26,
+    "question": "加快建设法治中国，必须围绕保障和促进社会（），坚持依法治国、依法执政、依法行政共同推进，坚持法治国家、法治政府、法治社会一体建设，全面推进国家各方面工作法治化。",
+    "options": [
+      {
+        "label": "A",
+        "text": "发展进步"
+      },
+      {
+        "label": "B",
+        "text": "和谐稳定"
+      },
+      {
+        "label": "C",
+        "text": "公平正义"
+      },
+      {
+        "label": "D",
+        "text": "共同富裕"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-27",
+    "type": "single",
+    "sourceOrder": 27,
+    "question": "发展和安全是两件大事。发展解决的是动力问题，是推动国家和民族赓续绵延的根本支撑；安全解决的是（），是确保国家和民族行稳致远的坚强柱石。",
+    "options": [
+      {
+        "label": "A",
+        "text": "根本问题"
+      },
+      {
+        "label": "B",
+        "text": "稳定问题"
+      },
+      {
+        "label": "C",
+        "text": "和谐问题"
+      },
+      {
+        "label": "D",
+        "text": "保障问题"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-28",
+    "type": "single",
+    "sourceOrder": 28,
+    "question": "国有企业是中国特色社会主义的重要物质基础和政治基础，关系（）地位的巩固，关系我们党的执政地位和执政能力，关系我国社会主义制度。",
+    "options": [
+      {
+        "label": "A",
+        "text": "人民主体"
+      },
+      {
+        "label": "B",
+        "text": "公有制主体"
+      },
+      {
+        "label": "C",
+        "text": "经济体制主体"
+      },
+      {
+        "label": "D",
+        "text": "社会发展主体"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-29",
+    "type": "single",
+    "sourceOrder": 29,
+    "question": "在百余年接续奋斗中，一代又一代中国共产党人弘扬伟大建党精神，展现出伟大的历史主动精神，锤炼出鲜明的政治品格，铸就了一系列伟大精神，构筑起（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "民族精神"
+      },
+      {
+        "label": "B",
+        "text": "时代精神"
+      },
+      {
+        "label": "C",
+        "text": "社会主义核心价值观"
+      },
+      {
+        "label": "D",
+        "text": "中国共产党人精神谱系"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-30",
+    "type": "single",
+    "sourceOrder": 30,
+    "question": "在（）的共同旗帜下，中国共产党与各民主党派长期共存、互相监督、肝胆相照、荣辱与共，形成“共产党领导、多党派合作，共产党执政、多党派参政”这一具有鲜明中国特色的新型政党制度。",
+    "options": [
+      {
+        "label": "A",
+        "text": "民族复兴"
+      },
+      {
+        "label": "B",
+        "text": "强国建设"
+      },
+      {
+        "label": "C",
+        "text": "人民大团结"
+      },
+      {
+        "label": "D",
+        "text": "人民民主"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-31",
+    "type": "single",
+    "sourceOrder": 31,
+    "question": "坚持党对人民军队的绝对领导，是（）的根本原则。",
+    "options": [
+      {
+        "label": "A",
+        "text": "人民军队建军之本、强军之魂"
+      },
+      {
+        "label": "B",
+        "text": "军队建设的核心要求"
+      },
+      {
+        "label": "C",
+        "text": "国防和军队现代化的关键"
+      },
+      {
+        "label": "D",
+        "text": "打赢战争的重要保障"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-32",
+    "type": "single",
+    "sourceOrder": 32,
+    "question": "坚持党对人民军队绝对领导的根本制度是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "军委主席负责制"
+      },
+      {
+        "label": "B",
+        "text": "党委制"
+      },
+      {
+        "label": "C",
+        "text": "政治委员制"
+      },
+      {
+        "label": "D",
+        "text": "支部建在连上"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-33",
+    "type": "single",
+    "sourceOrder": 33,
+    "question": "坚持和加强党的全面领导，坚持党要管党、全面从严治党，以（）为主线。",
+    "options": [
+      {
+        "label": "A",
+        "text": "加强党的长期执政能力建设、先进性和纯洁性建设"
+      },
+      {
+        "label": "B",
+        "text": "党的政治建设"
+      },
+      {
+        "label": "C",
+        "text": "坚定理想信念宗旨"
+      },
+      {
+        "label": "D",
+        "text": "调动全党积极性、主动性、创造性"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-34",
+    "type": "single",
+    "sourceOrder": 34,
+    "question": "坚持和加强党的全面领导，坚持党要管党、全面从严治党，以（）为根基。",
+    "options": [
+      {
+        "label": "A",
+        "text": "加强党的长期执政能力建设、先进性和纯洁性建设"
+      },
+      {
+        "label": "B",
+        "text": "党的政治建设"
+      },
+      {
+        "label": "C",
+        "text": "坚定理想信念宗旨"
+      },
+      {
+        "label": "D",
+        "text": "调动全党积极性、主动性、创造性"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-35",
+    "type": "single",
+    "sourceOrder": 35,
+    "question": "坚持系统思维，整体规划育人各个环节，整合利用各种资源，统筹协调各方力量，发挥家庭、学校、社会协同育人机制的作用，实现全员育人、全过程育人、全方位育人，属于着力解决好（）的问题。",
+    "options": [
+      {
+        "label": "A",
+        "text": "培养什么人"
+      },
+      {
+        "label": "B",
+        "text": "怎样培养人"
+      },
+      {
+        "label": "C",
+        "text": "为谁培养人"
+      },
+      {
+        "label": "D",
+        "text": "谁来培养人"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-36",
+    "type": "single",
+    "sourceOrder": 36,
+    "question": "坚持贯彻（），推进祖国完全统一。",
+    "options": [
+      {
+        "label": "A",
+        "text": "和平统一方针"
+      },
+      {
+        "label": "B",
+        "text": "新时代党解决台湾问题的总体方略"
+      },
+      {
+        "label": "C",
+        "text": "一国两制方针"
+      },
+      {
+        "label": "D",
+        "text": "九二共识"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-37",
+    "type": "single",
+    "sourceOrder": 37,
+    "question": "实施乡村振兴战略，（）是总目标。",
+    "options": [
+      {
+        "label": "A",
+        "text": "农业农村现代化"
+      },
+      {
+        "label": "B",
+        "text": "乡风文明建设"
+      },
+      {
+        "label": "C",
+        "text": "生态农业发展"
+      },
+      {
+        "label": "D",
+        "text": "农民生活富裕"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-38",
+    "type": "single",
+    "sourceOrder": 38,
+    "question": "开启改革开放事业的思想前提是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "解放思想"
+      },
+      {
+        "label": "B",
+        "text": "解放和发展社会生产力"
+      },
+      {
+        "label": "C",
+        "text": "解放和增强社会活力"
+      },
+      {
+        "label": "D",
+        "text": "调整生产关系"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-39",
+    "type": "single",
+    "sourceOrder": 39,
+    "question": "必须坚持教育优先发展，把（）作为教育的根本任务，办好人民满意的教育。",
+    "options": [
+      {
+        "label": "A",
+        "text": "立德树人"
+      },
+      {
+        "label": "B",
+        "text": "社会实践"
+      },
+      {
+        "label": "C",
+        "text": "创新拔尖"
+      },
+      {
+        "label": "D",
+        "text": "专业技术"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-40",
+    "type": "single",
+    "sourceOrder": 40,
+    "question": "总结世界社会主义实践经验得出的重要结论是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "持续推进理论创新"
+      },
+      {
+        "label": "B",
+        "text": "持续推进制度创新"
+      },
+      {
+        "label": "C",
+        "text": "持续推进文化创新"
+      },
+      {
+        "label": "D",
+        "text": "改革开放永无止境"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-41",
+    "type": "single",
+    "sourceOrder": 41,
+    "question": "总结党百年来的理论创新经验，明确提出把马克思主义基本原理同中华优秀传统文化相结合的重大命题的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "毛泽东"
+      },
+      {
+        "label": "B",
+        "text": "邓小平"
+      },
+      {
+        "label": "C",
+        "text": "江泽民"
+      },
+      {
+        "label": "D",
+        "text": "习近平"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-42",
+    "type": "single",
+    "sourceOrder": 42,
+    "question": "我国社会主义政治制度优越性的一个突出特点是党总揽全局、协调各方的领导核心作用，形象地说是“众星捧月”，这个“月”就是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "人民"
+      },
+      {
+        "label": "B",
+        "text": "工人"
+      },
+      {
+        "label": "C",
+        "text": "知识分子"
+      },
+      {
+        "label": "D",
+        "text": "中国共产党"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-43",
+    "type": "single",
+    "sourceOrder": 43,
+    "question": "把习近平新时代中国特色社会主义思想写入党章的会议是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "党的十七大"
+      },
+      {
+        "label": "B",
+        "text": "党的十八大"
+      },
+      {
+        "label": "C",
+        "text": "党的十九大"
+      },
+      {
+        "label": "D",
+        "text": "党的二十大"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-44",
+    "type": "single",
+    "sourceOrder": 44,
+    "question": "改革开放的鲜明特征和首要任务是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "解放思想"
+      },
+      {
+        "label": "B",
+        "text": "解放和发展社会生产力"
+      },
+      {
+        "label": "C",
+        "text": "解放和增强社会活力"
+      },
+      {
+        "label": "D",
+        "text": "调整生产关系"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-45",
+    "type": "single",
+    "sourceOrder": 45,
+    "question": "新型国际关系的核心是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "相互尊重、公平正义、合作共赢"
+      },
+      {
+        "label": "B",
+        "text": "强权政治、零和博弈、单边主义"
+      },
+      {
+        "label": "C",
+        "text": "集团对抗、排他封闭、利益垄断"
+      },
+      {
+        "label": "D",
+        "text": "霸权主导、等级分化、不平等竞争"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-46",
+    "type": "single",
+    "sourceOrder": 46,
+    "question": "构成新时代坚持和发展中国特色社会主义的基本方略的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "“十个明确”"
+      },
+      {
+        "label": "B",
+        "text": "“六个必须坚持”"
+      },
+      {
+        "label": "C",
+        "text": "“十四个坚持”"
+      },
+      {
+        "label": "D",
+        "text": "“十三个方面成就”"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-47",
+    "type": "single",
+    "sourceOrder": 47,
+    "question": "澳门特别行政区始终坚守（）的核心价值。",
+    "options": [
+      {
+        "label": "A",
+        "text": "繁荣稳定"
+      },
+      {
+        "label": "B",
+        "text": "高度自治"
+      },
+      {
+        "label": "C",
+        "text": "爱国爱澳"
+      },
+      {
+        "label": "D",
+        "text": "和谐包容"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-48",
+    "type": "single",
+    "sourceOrder": 48,
+    "question": "牢牢把握两岸关系（）和主动权。",
+    "options": [
+      {
+        "label": "A",
+        "text": "领导权"
+      },
+      {
+        "label": "B",
+        "text": "主导权"
+      },
+      {
+        "label": "C",
+        "text": "主导权和主动权"
+      },
+      {
+        "label": "D",
+        "text": "发展方向"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-49",
+    "type": "single",
+    "sourceOrder": 49,
+    "question": "现代化经济体系必须坚持质量第一、（）优先。",
+    "options": [
+      {
+        "label": "A",
+        "text": "利益"
+      },
+      {
+        "label": "B",
+        "text": "速度"
+      },
+      {
+        "label": "C",
+        "text": "人才"
+      },
+      {
+        "label": "D",
+        "text": "效益"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-50",
+    "type": "single",
+    "sourceOrder": 50,
+    "question": "积极参与全球治理体系改革和建设，要推动全球治理朝着（）的方向发展。",
+    "options": [
+      {
+        "label": "A",
+        "text": "更加公正合理"
+      },
+      {
+        "label": "B",
+        "text": "霸权主导"
+      },
+      {
+        "label": "C",
+        "text": "集团化"
+      },
+      {
+        "label": "D",
+        "text": "单边化"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-51",
+    "type": "single",
+    "sourceOrder": 51,
+    "question": "经过努力，法治中国建设迈出坚实步伐，法治（）、稳预期、利长远的保障作用进一步发挥，党运用法治方式领导和治理国家的能力显著增强。",
+    "options": [
+      {
+        "label": "A",
+        "text": "固根本"
+      },
+      {
+        "label": "B",
+        "text": "强基础"
+      },
+      {
+        "label": "C",
+        "text": "增信心"
+      },
+      {
+        "label": "D",
+        "text": "提定力"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-52",
+    "type": "single",
+    "sourceOrder": 52,
+    "question": "维护意识形态安全，就是要毫不动摇坚持和巩固（）在意识形态领域的指导地位，不断巩固全党全国人民团结奋斗的共同思想基础。",
+    "options": [
+      {
+        "label": "A",
+        "text": "中国特色社会主义"
+      },
+      {
+        "label": "B",
+        "text": "习近平新时代中国特色社会主义"
+      },
+      {
+        "label": "C",
+        "text": "马克思主义"
+      },
+      {
+        "label": "D",
+        "text": "科学社会主义"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-53",
+    "type": "single",
+    "sourceOrder": 53,
+    "question": "维护（ ），是一个成熟的马克思主义执政党的重大建党原则。",
+    "options": [
+      {
+        "label": "A",
+        "text": "中国特色社会主义制度"
+      },
+      {
+        "label": "B",
+        "text": "人民当家作主"
+      },
+      {
+        "label": "C",
+        "text": "全面依法治国"
+      },
+      {
+        "label": "D",
+        "text": "党中央权威和集中统一领导"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-54",
+    "type": "single",
+    "sourceOrder": 54,
+    "question": "要把（）教育作为基础性工程、战略性任务，做到常态化开展、制度化推进，不断筑牢全党全国各族人民团结奋进的共同思想基础。",
+    "options": [
+      {
+        "label": "A",
+        "text": "理想信念"
+      },
+      {
+        "label": "B",
+        "text": "思想道德"
+      },
+      {
+        "label": "C",
+        "text": "法治思想"
+      },
+      {
+        "label": "D",
+        "text": "伦理观念"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-55",
+    "type": "single",
+    "sourceOrder": 55,
+    "question": "要牢固树立马克思主义（），坚持以人民为中心的创作导向，生产出无愧于我们这个伟大民族、伟大时代的优秀作品。",
+    "options": [
+      {
+        "label": "A",
+        "text": "国家观"
+      },
+      {
+        "label": "B",
+        "text": "民族观"
+      },
+      {
+        "label": "C",
+        "text": "历史观"
+      },
+      {
+        "label": "D",
+        "text": "文艺观"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-56",
+    "type": "single",
+    "sourceOrder": 56,
+    "question": "解决人民群众最关心最直接最现实的利益问题，是保障和改善民生的（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "核心任务"
+      },
+      {
+        "label": "B",
+        "text": "重中之重"
+      },
+      {
+        "label": "C",
+        "text": "关键环节"
+      },
+      {
+        "label": "D",
+        "text": "基本要求"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-57",
+    "type": "single",
+    "sourceOrder": 57,
+    "question": "香港特别行政区的高度自治权源于（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "香港基本法"
+      },
+      {
+        "label": "B",
+        "text": "中央授权"
+      },
+      {
+        "label": "C",
+        "text": "香港历史"
+      },
+      {
+        "label": "D",
+        "text": "国际认可"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-58",
+    "type": "single",
+    "sourceOrder": 58,
+    "question": "（ ）始终是党的生命线和根本工作路线，是我们党永葆青春活力和战斗力的重要传家宝。",
+    "options": [
+      {
+        "label": "A",
+        "text": "群众路线"
+      },
+      {
+        "label": "B",
+        "text": "经济路线"
+      },
+      {
+        "label": "C",
+        "text": "人民立场"
+      },
+      {
+        "label": "D",
+        "text": "政治立场"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-59",
+    "type": "single",
+    "sourceOrder": 59,
+    "question": "（ ），是我们党百年奋斗的宝贵历史经验，也是新时代党治国理政的根本价值取向。",
+    "options": [
+      {
+        "label": "A",
+        "text": "坚持人民至上"
+      },
+      {
+        "label": "B",
+        "text": "坚持社会主义道路"
+      },
+      {
+        "label": "C",
+        "text": "坚持党的性质"
+      },
+      {
+        "label": "D",
+        "text": "坚持人民立场"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-60",
+    "type": "single",
+    "sourceOrder": 60,
+    "question": "（ ）是推进现代化最坚实的根基、最深厚的力量。",
+    "options": [
+      {
+        "label": "A",
+        "text": "文化"
+      },
+      {
+        "label": "B",
+        "text": "中国共产党的领导"
+      },
+      {
+        "label": "C",
+        "text": "人民"
+      },
+      {
+        "label": "D",
+        "text": "中华文明"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-61",
+    "type": "single",
+    "sourceOrder": 61,
+    "question": "（ ），是新的时代条件下坚持和发展中国特色社会主义、推进改革开放和社会主义现代化建设的战略抉择。",
+    "options": [
+      {
+        "label": "A",
+        "text": "“十个明确”"
+      },
+      {
+        "label": "B",
+        "text": "“十四个坚持”"
+      },
+      {
+        "label": "C",
+        "text": "“四个全面”战略布局"
+      },
+      {
+        "label": "D",
+        "text": "“五位一体”总体布局"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-62",
+    "type": "single",
+    "sourceOrder": 62,
+    "question": "（ ）是工业文明发展到一定阶段的产物。",
+    "options": [
+      {
+        "label": "A",
+        "text": "农业文明"
+      },
+      {
+        "label": "B",
+        "text": "中华文明"
+      },
+      {
+        "label": "C",
+        "text": "生态文明"
+      },
+      {
+        "label": "D",
+        "text": "文明交流"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-63",
+    "type": "single",
+    "sourceOrder": 63,
+    "question": "（ ）是全面建设社会主义现代化国家的重要目标，也是满足人民日益增长的优美生态环境需要的必然要求。",
+    "options": [
+      {
+        "label": "A",
+        "text": "依法治国"
+      },
+      {
+        "label": "B",
+        "text": "建设美丽中国"
+      },
+      {
+        "label": "C",
+        "text": "共同富裕"
+      },
+      {
+        "label": "D",
+        "text": "建设文化强国"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "single-64",
+    "type": "single",
+    "sourceOrder": 64,
+    "question": "（ ）是更基础、更广泛、更深厚的自信，是一个国家、一个民族发展中最基本、最深沉、最持久的力量。",
+    "options": [
+      {
+        "label": "A",
+        "text": "道路自信"
+      },
+      {
+        "label": "B",
+        "text": "理论自信"
+      },
+      {
+        "label": "C",
+        "text": "制度自信"
+      },
+      {
+        "label": "D",
+        "text": "文化自信"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-65",
+    "type": "single",
+    "sourceOrder": 65,
+    "question": "（）与人民群众切身利益关系最密切，是人民群众安全感的晴雨表，是社会安定的风向标。",
+    "options": [
+      {
+        "label": "A",
+        "text": "政治安全"
+      },
+      {
+        "label": "B",
+        "text": "经济安全"
+      },
+      {
+        "label": "C",
+        "text": "文化安全"
+      },
+      {
+        "label": "D",
+        "text": "社会安全"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-66",
+    "type": "single",
+    "sourceOrder": 66,
+    "question": "（）是一个民族赖以维系的精神纽带，是一个国家共同的思想道德基础。",
+    "options": [
+      {
+        "label": "A",
+        "text": "核心价值观"
+      },
+      {
+        "label": "B",
+        "text": "民族精神"
+      },
+      {
+        "label": "C",
+        "text": "思想文化"
+      },
+      {
+        "label": "D",
+        "text": "伦理道德"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-67",
+    "type": "single",
+    "sourceOrder": 67,
+    "question": "（）是党永葆生机活力、走好新的赶考之路的必由之路。",
+    "options": [
+      {
+        "label": "A",
+        "text": "勇于自我革命"
+      },
+      {
+        "label": "B",
+        "text": "开拓创新"
+      },
+      {
+        "label": "C",
+        "text": "与时俱进"
+      },
+      {
+        "label": "D",
+        "text": "全面从严治党"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-68",
+    "type": "single",
+    "sourceOrder": 68,
+    "question": "（）是发展教育的根本尺度。",
+    "options": [
+      {
+        "label": "A",
+        "text": "为党育人"
+      },
+      {
+        "label": "B",
+        "text": "为国育才"
+      },
+      {
+        "label": "C",
+        "text": "人民满意"
+      },
+      {
+        "label": "D",
+        "text": "学生成才"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "single-69",
+    "type": "single",
+    "sourceOrder": 69,
+    "question": "（）是我们攀登世界科技高峰的必由之路。",
+    "options": [
+      {
+        "label": "A",
+        "text": "自主创新"
+      },
+      {
+        "label": "B",
+        "text": "脱贫攻坚"
+      },
+      {
+        "label": "C",
+        "text": "守正创新"
+      },
+      {
+        "label": "D",
+        "text": "信息技术"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-70",
+    "type": "single",
+    "sourceOrder": 70,
+    "question": "（）是科技创新的源头。我国面临的很多“卡脖子”技术问题，根子是基础理论研究跟不上。",
+    "options": [
+      {
+        "label": "A",
+        "text": "应用研究"
+      },
+      {
+        "label": "B",
+        "text": "国家实验室"
+      },
+      {
+        "label": "C",
+        "text": "经济特区"
+      },
+      {
+        "label": "D",
+        "text": "基础研究"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "single-71",
+    "type": "single",
+    "sourceOrder": 71,
+    "question": "（）是立国之基，老祖宗留下来的领土一寸也不能丢，我们决不会坐视领土完整受到侵犯。",
+    "options": [
+      {
+        "label": "A",
+        "text": "国土安全"
+      },
+      {
+        "label": "B",
+        "text": "生态安全"
+      },
+      {
+        "label": "C",
+        "text": "政治安全"
+      },
+      {
+        "label": "D",
+        "text": "文化安全"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "single-72",
+    "type": "single",
+    "sourceOrder": 72,
+    "question": "（）集中体现了一个国家基于文化而具有的凝聚力和生命力，以及由此产生的吸引力和影响力。",
+    "options": [
+      {
+        "label": "A",
+        "text": "文化创造力"
+      },
+      {
+        "label": "B",
+        "text": "文化自信心"
+      },
+      {
+        "label": "C",
+        "text": "文化软实力"
+      },
+      {
+        "label": "D",
+        "text": "文化传播力"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "multiple-1",
+    "type": "multiple",
+    "sourceOrder": 1,
+    "question": "“两个确立”指的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "确立习近平同志党中央的核心、全党的核心地位"
+      },
+      {
+        "label": "B",
+        "text": "确立习近平新时代中国特色社会主义思想的指导地位"
+      },
+      {
+        "label": "C",
+        "text": "确立中国特色社会主义道路"
+      },
+      {
+        "label": "D",
+        "text": "确立以人民为中心的发展思想"
+      }
+    ],
+    "answer": "A、B"
+  },
+  {
+    "id": "multiple-2",
+    "type": "multiple",
+    "sourceOrder": 2,
+    "question": "“中国共产党作为最高政治领导力量”这一地位，其最根本的依据在于？（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "党拥有先进的指导思想和严密的组织体系"
+      },
+      {
+        "label": "B",
+        "text": "我国国体、政体所内嵌的必然政治逻辑"
+      },
+      {
+        "label": "C",
+        "text": "中华民族伟大复兴事业"
+      },
+      {
+        "label": "D",
+        "text": "这是推进国家治理现代化的现实需要"
+      }
+    ],
+    "answer": "B、C"
+  },
+  {
+    "id": "multiple-3",
+    "type": "multiple",
+    "sourceOrder": 3,
+    "question": "一个国家制度和制度执行能力的集中体现是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "国家治理体系"
+      },
+      {
+        "label": "B",
+        "text": "社会治理体系"
+      },
+      {
+        "label": "C",
+        "text": "国家治理能力"
+      },
+      {
+        "label": "D",
+        "text": "社会治理能力"
+      }
+    ],
+    "answer": "A、C"
+  },
+  {
+    "id": "multiple-4",
+    "type": "multiple",
+    "sourceOrder": 4,
+    "question": "两岸同胞血脉相连，要（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "加强沟通"
+      },
+      {
+        "label": "B",
+        "text": "增进互信"
+      },
+      {
+        "label": "C",
+        "text": "凝聚共识"
+      },
+      {
+        "label": "D",
+        "text": "携手同心"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-5",
+    "type": "multiple",
+    "sourceOrder": 5,
+    "question": "中国共产党是执政党,党的领导是做好党和国家各项工作的根本保证，是我国（）的根本点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "政治稳定"
+      },
+      {
+        "label": "B",
+        "text": "经济发展"
+      },
+      {
+        "label": "C",
+        "text": "民族团结"
+      },
+      {
+        "label": "D",
+        "text": "社会稳定"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-6",
+    "type": "multiple",
+    "sourceOrder": 6,
+    "question": "中国共产党领导是中国特色社会主义最本质的特征，（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "这是在近代以来中国历史发展中形成的"
+      },
+      {
+        "label": "B",
+        "text": "这是由中国最广大人民根本利益决定的"
+      },
+      {
+        "label": "C",
+        "text": "这是实现中华民族伟大复兴历史任务决定的"
+      },
+      {
+        "label": "D",
+        "text": "这决定了中国特色社会主义其他特点和特征"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-7",
+    "type": "multiple",
+    "sourceOrder": 7,
+    "question": "中国在全球治理中发挥的作用包括（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "积极参与全球安全治理"
+      },
+      {
+        "label": "B",
+        "text": "参与全球经济治理"
+      },
+      {
+        "label": "C",
+        "text": "参与全球气候治理"
+      },
+      {
+        "label": "D",
+        "text": "推动全球公共卫生治理"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-8",
+    "type": "multiple",
+    "sourceOrder": 8,
+    "question": "中国式现代化（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "深深植根于中华优秀传统文化"
+      },
+      {
+        "label": "B",
+        "text": "体现科学社会主义的先进本质"
+      },
+      {
+        "label": "C",
+        "text": "借鉴吸收一切人类优秀文明成果"
+      },
+      {
+        "label": "D",
+        "text": "代表人类文明进步的发展方向"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-9",
+    "type": "multiple",
+    "sourceOrder": 9,
+    "question": "中国特色社会主义制度，( )。",
+    "options": [
+      {
+        "label": "A",
+        "text": "坚持把根本制度、基本制度、重要制度以及各方面体制机制等具体制度有机结合起来"
+      },
+      {
+        "label": "B",
+        "text": "坚持把国家层面民主制度同基层民主制度有机结合起来"
+      },
+      {
+        "label": "C",
+        "text": "坚持把党的领导、人民当家作主、依法治国有机结合起来"
+      },
+      {
+        "label": "D",
+        "text": "既坚持了社会主义的根本性质，又借鉴了古今中外制度建设的有益成果"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-10",
+    "type": "multiple",
+    "sourceOrder": 10,
+    "question": "中国特色社会主义政治发展道路，是近代以来中国人民长期奋斗（）的必然结果，是坚持党的本质属性、践行党的根本宗旨的必然要求。",
+    "options": [
+      {
+        "label": "A",
+        "text": "历史逻辑"
+      },
+      {
+        "label": "B",
+        "text": "理论逻辑"
+      },
+      {
+        "label": "C",
+        "text": "实践逻辑"
+      },
+      {
+        "label": "D",
+        "text": "政治逻辑"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-11",
+    "type": "multiple",
+    "sourceOrder": 11,
+    "question": "中国特色社会主义文化，( )。",
+    "options": [
+      {
+        "label": "A",
+        "text": "是激励全党全国各族人民奋勇前进的强大精神力量"
+      },
+      {
+        "label": "B",
+        "text": "它源自于5000多年文明历史的中华优秀传统文化"
+      },
+      {
+        "label": "C",
+        "text": "熔铸于党领导人民在革命、建设、改革中创造的革命文化和社会主义先进文化"
+      },
+      {
+        "label": "D",
+        "text": "植根于中国特色社会主义伟大实践"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-12",
+    "type": "multiple",
+    "sourceOrder": 12,
+    "question": "中国特色社会主义新时代，（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "是承前启后、继往开来，在新的历史条件下继续夺取中国特色社会主义伟大胜利的时代"
+      },
+      {
+        "label": "B",
+        "text": "是决胜全面建成小康社会、进而全面建设社会丰义现代化强国的时代"
+      },
+      {
+        "label": "C",
+        "text": "是全国各族人民团结奋斗、不断创造美好生活、逐步实现全体人民共同富裕的时代"
+      },
+      {
+        "label": "D",
+        "text": "全体中华儿女勠力同心、奋力实现中华民族伟大复兴中国梦的时代"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-13",
+    "type": "multiple",
+    "sourceOrder": 13,
+    "question": "习近平在2022年春季学期中央党校（国家行政学院）中青年干部培训班开班式上强调，干部要守住守牢拒腐防变防线，要层层设防、处处设防，要守住（）、亲情关。",
+    "options": [
+      {
+        "label": "A",
+        "text": "政治关"
+      },
+      {
+        "label": "B",
+        "text": "权力关"
+      },
+      {
+        "label": "C",
+        "text": "交往关"
+      },
+      {
+        "label": "D",
+        "text": "生活关"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-14",
+    "type": "multiple",
+    "sourceOrder": 14,
+    "question": "习近平指出：“这‘三个进一步解放’既是改革的目的，又是改革的条件。”“三个进一步解放”是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "进一步解放思想"
+      },
+      {
+        "label": "B",
+        "text": "进一步解放和发展生产力"
+      },
+      {
+        "label": "C",
+        "text": "进一步解放和增强社会活力"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-15",
+    "type": "multiple",
+    "sourceOrder": 15,
+    "question": "习近平新时代中国特色社会主义思想回答的重大时代课题是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "新时代坚持和发展什么样的中国特色社会主义、怎样坚持和发展中国特色社会主义"
+      },
+      {
+        "label": "B",
+        "text": "建设什么样的社会主义现代化强国、怎样建设社会主义现代化强国"
+      },
+      {
+        "label": "C",
+        "text": "建设什么样的长期执政的马克思主义政党、怎样建设长期执政的马克思主义政党"
+      },
+      {
+        "label": "D",
+        "text": "什么是社会主义、怎样建设社会主义"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-16",
+    "type": "multiple",
+    "sourceOrder": 16,
+    "question": "二十届四中全会公报指出，坚持（ ）方向，建设现代化产业体系。",
+    "options": [
+      {
+        "label": "A",
+        "text": "智能化"
+      },
+      {
+        "label": "B",
+        "text": "绿色化"
+      },
+      {
+        "label": "C",
+        "text": "融合化"
+      },
+      {
+        "label": "D",
+        "text": "国际化"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-17",
+    "type": "multiple",
+    "sourceOrder": 17,
+    "question": "人才强军要着力培养（）的新时代革命军人。",
+    "options": [
+      {
+        "label": "A",
+        "text": "有灵魂"
+      },
+      {
+        "label": "B",
+        "text": "有本事"
+      },
+      {
+        "label": "C",
+        "text": "有血性"
+      },
+      {
+        "label": "D",
+        "text": "有品德"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-18",
+    "type": "multiple",
+    "sourceOrder": 18,
+    "question": "人民军队是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "党领导的人民军队"
+      },
+      {
+        "label": "B",
+        "text": "捍卫国家主权的坚强力量"
+      },
+      {
+        "label": "C",
+        "text": "维护国家安全的坚强力量"
+      },
+      {
+        "label": "D",
+        "text": "保障发展利益的坚强力量"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-19",
+    "type": "multiple",
+    "sourceOrder": 19,
+    "question": "以下属于“十三个方面成就”的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "坚持党的全面领导"
+      },
+      {
+        "label": "B",
+        "text": "全面从严治党"
+      },
+      {
+        "label": "C",
+        "text": "全面深化改革开放"
+      },
+      {
+        "label": "D",
+        "text": "全面依法治国"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-20",
+    "type": "multiple",
+    "sourceOrder": 20,
+    "question": "以人民为中心的发展思想，不是高高在上的宣传口号，绝对不能只停留在口头上，要全方位贯穿于经济社会发展的各个环节，体现在人民群众（ ）的扎实提升上。",
+    "options": [
+      {
+        "label": "A",
+        "text": "使命感"
+      },
+      {
+        "label": "B",
+        "text": "获得感"
+      },
+      {
+        "label": "C",
+        "text": "幸福感"
+      },
+      {
+        "label": "D",
+        "text": "安全感"
+      }
+    ],
+    "answer": "B、C、D"
+  },
+  {
+    "id": "multiple-21",
+    "type": "multiple",
+    "sourceOrder": 21,
+    "question": "保障和改善民生要坚持（）的工作思路。",
+    "options": [
+      {
+        "label": "A",
+        "text": "坚守底线"
+      },
+      {
+        "label": "B",
+        "text": "突出重点"
+      },
+      {
+        "label": "C",
+        "text": "完善制度"
+      },
+      {
+        "label": "D",
+        "text": "引导预期"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-22",
+    "type": "multiple",
+    "sourceOrder": 22,
+    "question": "党依靠人民创造历史伟业，就要做到（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "尊重人民主体地位"
+      },
+      {
+        "label": "B",
+        "text": "尊重人民首创精神"
+      },
+      {
+        "label": "C",
+        "text": "激发人民群众的创新创造活力"
+      },
+      {
+        "label": "D",
+        "text": "总结、概括人民群众实践中形成的新鲜经验"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-23",
+    "type": "multiple",
+    "sourceOrder": 23,
+    "question": "党的二十大指出，新时代新征程中国共产党的中心任务，就是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "团结带领全国各族人民全面建成社会主义现代化强国"
+      },
+      {
+        "label": "B",
+        "text": "实现第二个百年奋斗目标"
+      },
+      {
+        "label": "C",
+        "text": "以中国式现代化全面推进中华民族伟大复兴"
+      },
+      {
+        "label": "D",
+        "text": "贯彻新发展理念，促进高质量发展"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-24",
+    "type": "multiple",
+    "sourceOrder": 24,
+    "question": "党的十九大概括中国特色社会主义进入新时代的重大意义,这就是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "意味着中华民族迎来了从站起来、富起来到强起来的伟大飞跃，迎来了中华民族伟大复兴的光明前景"
+      },
+      {
+        "label": "B",
+        "text": "意味着科学社会主义在中国焕发出强大生机活力，在世界上高高举起了中国特色社会主义伟大旗帜"
+      },
+      {
+        "label": "C",
+        "text": "意味着中国特色社会主义道路、理论、制度、文化不断发展，拓展了发展中国家实现现代化的途径"
+      },
+      {
+        "label": "D",
+        "text": "意味着中国即将建成社会主义现代化强国，全体人民过上共同富裕的生活"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-25",
+    "type": "multiple",
+    "sourceOrder": 25,
+    "question": "党的十八大以来，以习近平同志为核心的党中央从（）的战略高度出发，把历史文化遗产保护利用工作摆到更加突出的位置，推动文物保护利用和文化遗产保护传承工作得到全面加强。",
+    "options": [
+      {
+        "label": "A",
+        "text": "留住文化根脉"
+      },
+      {
+        "label": "B",
+        "text": "守住民族之魂"
+      },
+      {
+        "label": "C",
+        "text": "不忘初心"
+      },
+      {
+        "label": "D",
+        "text": "牢记使命"
+      }
+    ],
+    "answer": "A、B"
+  },
+  {
+    "id": "multiple-26",
+    "type": "multiple",
+    "sourceOrder": 26,
+    "question": "党的十八大以来，党坚持依规治党，严格遵守党章，形成比较完善的党内法规体系，严格制度执行，党的建设（）水平明显提高。",
+    "options": [
+      {
+        "label": "A",
+        "text": "科学化"
+      },
+      {
+        "label": "B",
+        "text": "制度化"
+      },
+      {
+        "label": "C",
+        "text": "程序化"
+      },
+      {
+        "label": "D",
+        "text": "规范化"
+      }
+    ],
+    "answer": "A、B、D"
+  },
+  {
+    "id": "multiple-27",
+    "type": "multiple",
+    "sourceOrder": 27,
+    "question": "全人类共同价值包括（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "和平、发展"
+      },
+      {
+        "label": "B",
+        "text": "公平、正义"
+      },
+      {
+        "label": "C",
+        "text": "民主、自由"
+      },
+      {
+        "label": "D",
+        "text": "平等、包容"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-28",
+    "type": "multiple",
+    "sourceOrder": 28,
+    "question": "全面加强党的领导，（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "使我们有效应对严峻复杂的国际形势和接踵而至的巨大风险挑战"
+      },
+      {
+        "label": "B",
+        "text": "有力推进了党和国家各项事业的顺利发展"
+      },
+      {
+        "label": "C",
+        "text": "胜利实现了全面建成小康社会的战略目标"
+      },
+      {
+        "label": "D",
+        "text": "开启了全面建设社会主义现代化国家新征程"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-29",
+    "type": "multiple",
+    "sourceOrder": 29,
+    "question": "全面建成了小康社会的重大意义是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "意味着中华民族实现千百年来的夙愿"
+      },
+      {
+        "label": "B",
+        "text": "表明我国发展和人民生活水平跃上新的大台阶"
+      },
+      {
+        "label": "C",
+        "text": "表明我国已经实现了由高速发展向高质量发展转变"
+      },
+      {
+        "label": "D",
+        "text": "是实现中华民族伟大复兴征程中的关键一步"
+      }
+    ],
+    "answer": "A、B、D"
+  },
+  {
+    "id": "multiple-30",
+    "type": "multiple",
+    "sourceOrder": 30,
+    "question": "全面建设社会主义现代化国家中的重大问题有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "深化社会主义市场经济体制改革"
+      },
+      {
+        "label": "B",
+        "text": "深化人民当家作主制度体系改革"
+      },
+      {
+        "label": "C",
+        "text": "深化文化体制改革"
+      },
+      {
+        "label": "D",
+        "text": "深化社会体制改革"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-31",
+    "type": "multiple",
+    "sourceOrder": 31,
+    "question": "全面深化改革开放要坚持的正确方法论有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "增强全面深化改革的系统性、整体性、协同性"
+      },
+      {
+        "label": "B",
+        "text": "加强顶层设计和摸着石头过河相结合"
+      },
+      {
+        "label": "C",
+        "text": "统筹改革发展稳定"
+      },
+      {
+        "label": "D",
+        "text": "胆子要大，步子要稳"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-32",
+    "type": "multiple",
+    "sourceOrder": 32,
+    "question": "决定一个国家选择什么样的国家制度和国家治理体系的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "这个国家的历史文化"
+      },
+      {
+        "label": "B",
+        "text": "这个国家的社会性质"
+      },
+      {
+        "label": "C",
+        "text": "这个国家的经济发展水平"
+      },
+      {
+        "label": "D",
+        "text": "这个国家的政治发展水平"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-33",
+    "type": "multiple",
+    "sourceOrder": 33,
+    "question": "凝结着我们党认识世界、改造世界的宝贵经验和重大成果的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "“十个明确”"
+      },
+      {
+        "label": "B",
+        "text": "“十四个坚持”"
+      },
+      {
+        "label": "C",
+        "text": "“十三个方面成就”"
+      },
+      {
+        "label": "D",
+        "text": "“六个必须坚持”"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-34",
+    "type": "multiple",
+    "sourceOrder": 34,
+    "question": "制度稳则国家稳，社会主义制度是我国的根本制度，中国特色社会主义制度所具有的显著优势是（）的根本保证。",
+    "options": [
+      {
+        "label": "A",
+        "text": "抵御风险挑战"
+      },
+      {
+        "label": "B",
+        "text": "维护国家安全"
+      },
+      {
+        "label": "C",
+        "text": "维持社会稳定"
+      },
+      {
+        "label": "D",
+        "text": "促进民族团"
+      }
+    ],
+    "answer": "A、B"
+  },
+  {
+    "id": "multiple-35",
+    "type": "multiple",
+    "sourceOrder": 35,
+    "question": "加强人民当家作主制度保障，要不断坚持和完善我国根本政治制度、基本政治制度、重要政治制度，构建多样、畅通、有序的民主渠道，有效保证（）相统一。",
+    "options": [
+      {
+        "label": "A",
+        "text": "党的主张"
+      },
+      {
+        "label": "B",
+        "text": "国家意志"
+      },
+      {
+        "label": "C",
+        "text": "个人利益"
+      },
+      {
+        "label": "D",
+        "text": "人民意愿"
+      }
+    ],
+    "answer": "A、B、D"
+  },
+  {
+    "id": "multiple-36",
+    "type": "multiple",
+    "sourceOrder": 36,
+    "question": "加强城乡社区治理，要健全（）良性互动的治理体系。",
+    "options": [
+      {
+        "label": "A",
+        "text": "政府治理"
+      },
+      {
+        "label": "B",
+        "text": "社会调节"
+      },
+      {
+        "label": "C",
+        "text": "居民自治"
+      },
+      {
+        "label": "D",
+        "text": "群众参与"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-37",
+    "type": "multiple",
+    "sourceOrder": 37,
+    "question": "加快建设法治中国，必须围绕保障和促进社会公平正义，坚持依法治国、依法执政、依法行政共同推进，坚持（）一体建设，全面推进国家各方面工作法治化。",
+    "options": [
+      {
+        "label": "A",
+        "text": "依法治国"
+      },
+      {
+        "label": "B",
+        "text": "法治国家"
+      },
+      {
+        "label": "C",
+        "text": "法治政府"
+      },
+      {
+        "label": "D",
+        "text": "法治社会"
+      }
+    ],
+    "answer": "B、C、D"
+  },
+  {
+    "id": "multiple-38",
+    "type": "multiple",
+    "sourceOrder": 38,
+    "question": "坚持以（）为基础走和平发展道路。",
+    "options": [
+      {
+        "label": "A",
+        "text": "不冲突不对抗"
+      },
+      {
+        "label": "B",
+        "text": "相互尊重"
+      },
+      {
+        "label": "C",
+        "text": "人文交流"
+      },
+      {
+        "label": "D",
+        "text": "合作共赢"
+      }
+    ],
+    "answer": "B、D"
+  },
+  {
+    "id": "multiple-39",
+    "type": "multiple",
+    "sourceOrder": 39,
+    "question": "坚持和加强党的全面领导，坚持党要管党、全面从严治党，以调动全党（）为着力点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "积极性"
+      },
+      {
+        "label": "B",
+        "text": "主动性"
+      },
+      {
+        "label": "C",
+        "text": "创造性"
+      },
+      {
+        "label": "D",
+        "text": "先进性"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-40",
+    "type": "multiple",
+    "sourceOrder": 40,
+    "question": "外交为民的具体体现包括（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "维护海外中国公民、法人的安全和正当权益"
+      },
+      {
+        "label": "B",
+        "text": "积极开展民间外交"
+      },
+      {
+        "label": "C",
+        "text": "为中国公民海外出行、工作、学习提供便利"
+      },
+      {
+        "label": "D",
+        "text": "优先保障发达国家利益"
+      }
+    ],
+    "answer": "A、B"
+  },
+  {
+    "id": "multiple-41",
+    "type": "multiple",
+    "sourceOrder": 41,
+    "question": "实现高水平科技自立自强是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "应对风险挑战和维护国家利益的必然选择"
+      },
+      {
+        "label": "B",
+        "text": "构建新发展格局的内在要求"
+      },
+      {
+        "label": "C",
+        "text": "推动高质量发展的内在要求"
+      },
+      {
+        "label": "D",
+        "text": "满足人民美好生活需要的内在要求"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-42",
+    "type": "multiple",
+    "sourceOrder": 42,
+    "question": "巩固提高一体化国家战略体系和能力，要加强（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "军地战略规划统筹"
+      },
+      {
+        "label": "B",
+        "text": "政策制度衔接"
+      },
+      {
+        "label": "C",
+        "text": "资源要素共享"
+      },
+      {
+        "label": "D",
+        "text": "国防实力和经济实力同步提升"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-43",
+    "type": "multiple",
+    "sourceOrder": 43,
+    "question": "建设教育强国是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "全面建成社会主义现代化强国的战略先导"
+      },
+      {
+        "label": "B",
+        "text": "是实现高水平科技自立自强的重要支撑"
+      },
+      {
+        "label": "C",
+        "text": "是以中国式现代化全面推进中华民族伟大复兴的基础工程"
+      },
+      {
+        "label": "D",
+        "text": "必须把教育事业放在优先发展的战略位置"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-44",
+    "type": "multiple",
+    "sourceOrder": 44,
+    "question": "建设法治中国的总体目标，就是实现法律规范科学完备统一，执法公正高效权威，权力运行受到有效制约监督，人民合法权益得到充分尊重保障，法治信仰普遍确立，（）全面建成。",
+    "options": [
+      {
+        "label": "A",
+        "text": "依法治国"
+      },
+      {
+        "label": "B",
+        "text": "法治国家"
+      },
+      {
+        "label": "C",
+        "text": "法治政府"
+      },
+      {
+        "label": "D",
+        "text": "法治社会"
+      }
+    ],
+    "answer": "B、C、D"
+  },
+  {
+    "id": "multiple-45",
+    "type": "multiple",
+    "sourceOrder": 45,
+    "question": "必须坚持教育（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "为人民服务"
+      },
+      {
+        "label": "B",
+        "text": "为中国共产党治国理政服务"
+      },
+      {
+        "label": "C",
+        "text": "为巩固和发展中国特色社会主义制度服务"
+      },
+      {
+        "label": "D",
+        "text": "为改革开放和社会主义现代化建设服务"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-46",
+    "type": "multiple",
+    "sourceOrder": 46,
+    "question": "我们培养的人，（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "要坚定共产主义远大理想和中国特色社会主义共同理想"
+      },
+      {
+        "label": "B",
+        "text": "要有高尚的道德品质，厚植爱国主义情怀"
+      },
+      {
+        "label": "C",
+        "text": "要养成刻苦学习的习惯"
+      },
+      {
+        "label": "D",
+        "text": "要积极投身社会实践，增长经验和技能"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-47",
+    "type": "multiple",
+    "sourceOrder": 47,
+    "question": "我们要落实新时代党的建设总要求，健全全面从严治党体系，全面推进党的（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "自我净化"
+      },
+      {
+        "label": "B",
+        "text": "自我完善"
+      },
+      {
+        "label": "C",
+        "text": "自我革新"
+      },
+      {
+        "label": "D",
+        "text": "自我提高"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-48",
+    "type": "multiple",
+    "sourceOrder": 48,
+    "question": "我国社会主要矛盾的变化（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "没有改变我们对我国社会主义所处历史阶段的判断"
+      },
+      {
+        "label": "B",
+        "text": "我国仍处于并将长期处于社会主义初级阶段的基本国情没有变"
+      },
+      {
+        "label": "C",
+        "text": "我国是世界最大发展中国家的国际地位没有变"
+      },
+      {
+        "label": "D",
+        "text": "对党和国家工作提出了许多新要求"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-49",
+    "type": "multiple",
+    "sourceOrder": 49,
+    "question": "我国经济发展处于（）阶段，我国发展进入新常态。",
+    "options": [
+      {
+        "label": "A",
+        "text": "增长速度换挡期"
+      },
+      {
+        "label": "B",
+        "text": "结构调整阵痛期"
+      },
+      {
+        "label": "C",
+        "text": "质量转型提升期"
+      },
+      {
+        "label": "D",
+        "text": "前期刺激政策消化期"
+      }
+    ],
+    "answer": "A、B、D"
+  },
+  {
+    "id": "multiple-50",
+    "type": "multiple",
+    "sourceOrder": 50,
+    "question": "扎实推进共同富裕，要把握好（ ）的原则。",
+    "options": [
+      {
+        "label": "A",
+        "text": "鼓励勤劳创新致富"
+      },
+      {
+        "label": "B",
+        "text": "坚持基本经济制度"
+      },
+      {
+        "label": "C",
+        "text": "量力而行"
+      },
+      {
+        "label": "D",
+        "text": "坚持循序渐进"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-51",
+    "type": "multiple",
+    "sourceOrder": 51,
+    "question": "把处理好（）与（）的关系作为经济体制改革的关键.",
+    "options": [
+      {
+        "label": "A",
+        "text": "政府"
+      },
+      {
+        "label": "B",
+        "text": "市场"
+      },
+      {
+        "label": "C",
+        "text": "人民"
+      },
+      {
+        "label": "D",
+        "text": "发展"
+      }
+    ],
+    "answer": "A、B"
+  },
+  {
+    "id": "multiple-52",
+    "type": "multiple",
+    "sourceOrder": 52,
+    "question": "推进中国式现代化需要牢牢把握的重大原则是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "坚持和加强党的全面领导"
+      },
+      {
+        "label": "B",
+        "text": "坚持中国特色社会主义道路"
+      },
+      {
+        "label": "C",
+        "text": "坚持以人民为中心的发展思想"
+      },
+      {
+        "label": "D",
+        "text": "坚持深化改革开放"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-53",
+    "type": "multiple",
+    "sourceOrder": 53,
+    "question": "推进中国式现代化，必须坚持（），坚持道不变、志不改，既不走封闭僵化的老路，也不走改旗易帜的邪路，始终坚持和发展中国特色社会主义。",
+    "options": [
+      {
+        "label": "A",
+        "text": "以经济建设为中心"
+      },
+      {
+        "label": "B",
+        "text": "坚持四项基本原则"
+      },
+      {
+        "label": "C",
+        "text": "坚持改革开放"
+      },
+      {
+        "label": "D",
+        "text": "坚持独立自主、自力更生"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-54",
+    "type": "multiple",
+    "sourceOrder": 54,
+    "question": "推进健康中国建设，要深化医药卫生体制改革，促进（）协同发展和治理。",
+    "options": [
+      {
+        "label": "A",
+        "text": "医保"
+      },
+      {
+        "label": "B",
+        "text": "医疗"
+      },
+      {
+        "label": "C",
+        "text": "医药"
+      },
+      {
+        "label": "D",
+        "text": "医患"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-55",
+    "type": "multiple",
+    "sourceOrder": 55,
+    "question": "推进市域社会治理现代化，要适应（）的要求。",
+    "options": [
+      {
+        "label": "A",
+        "text": "共建共治共享社会治理新格局"
+      },
+      {
+        "label": "B",
+        "text": "社会主要矛盾变化"
+      },
+      {
+        "label": "C",
+        "text": "把重大风险防控化解在市域"
+      },
+      {
+        "label": "D",
+        "text": "基层治理现代化"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-56",
+    "type": "multiple",
+    "sourceOrder": 56,
+    "question": "政治安全涉及(）的稳固，是一个国家最根本的需求，是一切国家生存和发展的基础条件。",
+    "options": [
+      {
+        "label": "A",
+        "text": "国家主权"
+      },
+      {
+        "label": "B",
+        "text": "政权"
+      },
+      {
+        "label": "C",
+        "text": "制度"
+      },
+      {
+        "label": "D",
+        "text": "意识形态"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-57",
+    "type": "multiple",
+    "sourceOrder": 57,
+    "question": "新时代党解决台湾问题的总体方略，包括（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "坚持一个中国原则和“九二共识”"
+      },
+      {
+        "label": "B",
+        "text": "坚决反对“台独”"
+      },
+      {
+        "label": "C",
+        "text": "促进两岸交流合作"
+      },
+      {
+        "label": "D",
+        "text": "深化两岸融合发展"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-58",
+    "type": "multiple",
+    "sourceOrder": 58,
+    "question": "新时代全面深化改革是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "全方位的"
+      },
+      {
+        "label": "B",
+        "text": "深层次的"
+      },
+      {
+        "label": "C",
+        "text": "根本性的"
+      },
+      {
+        "label": "D",
+        "text": "适应性的"
+      }
+    ],
+    "answer": "A、B、C"
+  },
+  {
+    "id": "multiple-59",
+    "type": "multiple",
+    "sourceOrder": 59,
+    "question": "更好推进中国特色社会主义法治体系建设，必须加快形成（），形成完善的党内法规体系。",
+    "options": [
+      {
+        "label": "A",
+        "text": "完备的法律规范体系"
+      },
+      {
+        "label": "B",
+        "text": "高效的法治实施体系"
+      },
+      {
+        "label": "C",
+        "text": "严密的法治监督体系"
+      },
+      {
+        "label": "D",
+        "text": "有力的法治保障体系"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-60",
+    "type": "multiple",
+    "sourceOrder": 60,
+    "question": "深化两岸融合发展，要（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "促进两岸经济文化交流合作"
+      },
+      {
+        "label": "B",
+        "text": "完善保障台湾同胞福祉的制度和政策"
+      },
+      {
+        "label": "C",
+        "text": "推动两岸共同弘扬中华文化"
+      },
+      {
+        "label": "D",
+        "text": "增进两岸同胞相互理解"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-61",
+    "type": "multiple",
+    "sourceOrder": 61,
+    "question": "确保党始终总揽全局、协调各方，必须增强政治意识（ ），自觉维护党中央权威和集中统一领导，自觉在思想上政治上行动上同党中央保持高度一致。",
+    "options": [
+      {
+        "label": "A",
+        "text": "大局意识"
+      },
+      {
+        "label": "B",
+        "text": "核心意识"
+      },
+      {
+        "label": "C",
+        "text": "中心意识"
+      },
+      {
+        "label": "D",
+        "text": "看齐意识"
+      }
+    ],
+    "answer": "A、B、D"
+  },
+  {
+    "id": "multiple-62",
+    "type": "multiple",
+    "sourceOrder": 62,
+    "question": "社会主义改革开放的出发点和落脚点是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "为了更好实现和维护人民利益"
+      },
+      {
+        "label": "B",
+        "text": "为了让经济持续发展"
+      },
+      {
+        "label": "C",
+        "text": "为了让社会长期稳定"
+      },
+      {
+        "label": "D",
+        "text": "为了让老百姓过上好日子"
+      }
+    ],
+    "answer": "A、D"
+  },
+  {
+    "id": "multiple-63",
+    "type": "multiple",
+    "sourceOrder": 63,
+    "question": "维护意识形态安全，就是要毫不动摇坚持和巩固马克思主义在意识形态领域的指导地位，不断巩固全党全国人民团结奋斗的共同思想基础。意识形态事关（）的重大问题。",
+    "options": [
+      {
+        "label": "A",
+        "text": "定什么基调"
+      },
+      {
+        "label": "B",
+        "text": "举什么旗"
+      },
+      {
+        "label": "C",
+        "text": "走什么路"
+      },
+      {
+        "label": "D",
+        "text": "朝着什么样发展"
+      }
+    ],
+    "answer": "B、C"
+  },
+  {
+    "id": "multiple-64",
+    "type": "multiple",
+    "sourceOrder": 64,
+    "question": "绿水青山是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "自然财富"
+      },
+      {
+        "label": "B",
+        "text": "生态财富"
+      },
+      {
+        "label": "C",
+        "text": "社会财富"
+      },
+      {
+        "label": "D",
+        "text": "经济财富"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-65",
+    "type": "multiple",
+    "sourceOrder": 65,
+    "question": "落实立德树人根本任务，必须着力解决好（）的问题，这是教育的根本问题，也是（）的核心课题。",
+    "options": [
+      {
+        "label": "A",
+        "text": "培养什么人"
+      },
+      {
+        "label": "B",
+        "text": "怎样培养人"
+      },
+      {
+        "label": "C",
+        "text": "为谁培养人"
+      },
+      {
+        "label": "D",
+        "text": "建设教育强国"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-66",
+    "type": "multiple",
+    "sourceOrder": 66,
+    "question": "要把维护意识形态安全摆在极端重要位置，落实意识形态工作责任制，把意识形态工作的（）牢牢掌握在党的手中。",
+    "options": [
+      {
+        "label": "A",
+        "text": "主动权"
+      },
+      {
+        "label": "B",
+        "text": "领导权"
+      },
+      {
+        "label": "C",
+        "text": "管理权"
+      },
+      {
+        "label": "D",
+        "text": "话语权"
+      }
+    ],
+    "answer": "B、C、D"
+  },
+  {
+    "id": "multiple-67",
+    "type": "multiple",
+    "sourceOrder": 67,
+    "question": "要推进供给侧结构性改革作为经济发展的主线，坚持（）方针。",
+    "options": [
+      {
+        "label": "A",
+        "text": "巩固"
+      },
+      {
+        "label": "B",
+        "text": "增强"
+      },
+      {
+        "label": "C",
+        "text": "提升"
+      },
+      {
+        "label": "D",
+        "text": "畅通"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-68",
+    "type": "multiple",
+    "sourceOrder": 68,
+    "question": "通过协商民主，（），体现了中国特色社会主义民主政治的独特优势。",
+    "options": [
+      {
+        "label": "A",
+        "text": "密切了党同人民群众的血肉联系"
+      },
+      {
+        "label": "B",
+        "text": "促进了科学决策、民主决策"
+      },
+      {
+        "label": "C",
+        "text": "凝聚了全社会共识"
+      },
+      {
+        "label": "D",
+        "text": "保障了人民有序政治参与"
+      }
+    ],
+    "answer": "A、B、C、D"
+  },
+  {
+    "id": "multiple-69",
+    "type": "multiple",
+    "sourceOrder": 69,
+    "question": "（                                            ）与（）相统一，既是马克思主义的价值追求，也是社会主义的本质要求，更是中国共产党人的奋斗目标。( )",
+    "options": [
+      {
+        "label": "A",
+        "text": "促进人的全面发展"
+      },
+      {
+        "label": "B",
+        "text": "促进社会稳定"
+      },
+      {
+        "label": "C",
+        "text": "促进共同富裕"
+      },
+      {
+        "label": "D",
+        "text": "促进经济发展"
+      }
+    ],
+    "answer": "A、C"
+  },
+  {
+    "id": "multiple-70",
+    "type": "multiple",
+    "sourceOrder": 70,
+    "question": "（），是我们党的初心和使命，是党领导现代化建设的出发点和落脚点，也是新发展理念的“根”和“魂”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "为人民谋幸福"
+      },
+      {
+        "label": "B",
+        "text": "为人民谋复兴"
+      },
+      {
+        "label": "C",
+        "text": "为民族谋复兴"
+      },
+      {
+        "label": "D",
+        "text": "为民族谋幸福"
+      }
+    ],
+    "answer": "A、C"
+  }
+]
