@@ -3,6 +3,7 @@
 
 import re
 import json
+import os
 
 def parse_questions(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -128,7 +129,8 @@ def parse_section(text, qtype):
     return questions
 
 def main():
-    filepath = '/Users/hatsuyuki/Library/Mobile Documents/com~apple~CloudDocs/ouc/学科资料/大二下/徐金鹏/题库/题库提取.txt'
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    filepath = os.path.join(script_dir, '题库提取.txt')
     questions = parse_questions(filepath)
     
     # Validate
@@ -158,7 +160,7 @@ def main():
                 break
     
     # Write JSON
-    output_path = '/Users/hatsuyuki/Library/Mobile Documents/com~apple~CloudDocs/ouc/学科资料/大二下/徐金鹏/题库/questions.json'
+    output_path = os.path.join(script_dir, 'questions.json')
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(questions, f, ensure_ascii=False, indent=2)
     

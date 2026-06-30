@@ -18,7 +18,20 @@
 | `习思想刷题.html` | 主程序（浏览器直接打开） |
 | `parse_questions.py` | PDF 题库解析脚本 |
 | `questions.json` | 解析后的题库数据（142 题） |
+| `题库提取.txt` | pdftotext 提取的原始文本 |
+| `习近平新时代中国特色社会主义思想-复习题库(1).pdf` | 题库原始 PDF |
 | `.gitignore` | Git 忽略规则 |
+
+## 题库数据来源
+
+题库提取自《习近平新时代中国特色社会主义思想-复习题库》PDF（142 题：单选 72 + 多选 70）。
+
+如需重新解析题库：
+```bash
+pip install pdftotext  # 或 brew install poppler
+pdftotext -layout "习近平新时代中国特色社会主义思想-复习题库(1).pdf" 题库提取.txt
+python parse_questions.py
+```
 
 ## 使用方式
 

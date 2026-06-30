@@ -15,8 +15,5 @@ __pycache__/
 
 # Temp files
 *_compact.json
-题库提取.txt
 
-# Binary source files (not needed in repo)
-*.docx
-*.pdf
+# Source files included in repo
