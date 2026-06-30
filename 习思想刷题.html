@@ -115,6 +115,7 @@ const HISTORY_KEY = 'xjp-xi-quiz-attempts-v1';
 const BACKUP_FILENAME = '思政题库备份.json';
 
 let currentSubject = 'mao'; // default
+let subjectSetFromHome = false; // true if clicked from home page buttons
 let quizQuestions = [];
 let quizIndex = 0;
 let quizAnswered = {};
@@ -136,6 +137,7 @@ function render(){
   const page=getPage();
   document.querySelectorAll('#mainNav a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+page));
   const app=document.getElementById('app');
+  if(page!=='quiz'&&page!=='wrong')subjectSetFromHome=false;
   switch(page){
     case'home':renderHome(app);break;
     case'quiz':renderQuiz(app);break;
@@ -205,7 +207,7 @@ function renderHome(app){
   `;
 }
 
-function setSubject(s){currentSubject=s;}
+function setSubject(s){currentSubject=s;subjectSetFromHome=true;}
 
 function clearAllData(){
   if(confirm('确定要清空所有本机记录吗？\n\n这将删除：\n- 所有作答统计\n- 所有错题记录\n- 所有作答历史\n\n此操作不可恢复！')){
@@ -252,34 +254,58 @@ function importData(event){
   r.readAsText(f);event.target.value='';
 }
 
+// ========== SUBJECT CHOOSER ==========
+function renderSubjectChooser(app,mode){{
+  const mao=buildSubjectStats('mao'),xi=buildSubjectStats('xi');
+  const isQuiz=mode==='quiz';
+  const totalMao=mao.total,totalXi=xi.total;
+  const maoCount=isQuiz?totalMao:mao.wrongCount;
+  const xiCount=isQuiz?totalXi:xi.wrongCount;
+  const label=isQuiz?'完整题库':'错题集';
+  app.innerHTML=`
+    <div class="card" style="text-align:center;">
+      <h2>${{isQuiz?'📝':'🎯'}} 选择学科 - ${{label}}</h2>
+      <div class="btn-group" style="flex-direction:column;margin-top:16px;">
+        <a class="btn btn-mao btn-block" href="#${{mode}}" onclick="setSubject('mao')">📕 毛泽东思想（${{maoCount}} 题）</a>
+        <a class="btn btn-primary btn-block" href="#${{mode}}" onclick="setSubject('xi')">📘 习近平思想（${{xiCount}} 题）</a>
+        <a class="btn btn-outline btn-block" href="#home">🏠 返回首页</a>
+      </div>
+    </div>`;
+}}
+
 // ========== QUIZ ==========
-function renderQuiz(app){
+function renderQuiz(app){{
+  if(!subjectSetFromHome){{renderSubjectChooser(app,'quiz');return}}
+  subjectSetFromHome=false;
   const qs=qsBySubject(currentSubject);
   const singles=shuffle(qs.filter(q=>q.type==='single'));
   const multis=shuffle(qs.filter(q=>q.type==='multiple'));
   const judges=shuffle(qs.filter(q=>q.type==='judge'));
   quizQuestions=[...singles,...multis,...judges];
-  quizIndex=0;quizAnswered={};
+  quizIndex=0;quizAnswered={{}};
   renderQuizQuestion(app);
-}
+}}
 
-function renderWrong(app){
+function renderWrong(app){{
+  if(!subjectSetFromHome){{renderSubjectChooser(app,'wrong');return}}
+  subjectSetFromHome=false;
   const stats=loadStats();
   const wrongIds=[];
-  for(const q of qsBySubject(currentSubject)){
+  for(const q of qsBySubject(currentSubject)){{
     const s=stats[q.id];
     if(s&&s.attempts>0&&s.wrongRate>30)wrongIds.push(q.id);
-  }
-  if(wrongIds.length===0){
-    app.innerHTML=`<div class="card"><h2>🎯 错题集</h2><div class="empty"><div class="icon">🎉</div><p>太棒了！当前学科没有错误率超过30%的题目。</p><a class="btn btn-primary" href="#home" style="margin-top:16px;">返回首页</a></div></div>`;return;
-  }
+  }}
+  if(wrongIds.length===0){{
+    const subjName=currentSubject==='mao'?'毛概':'习概';
+    app.innerHTML=`<div class="card"><h2>🎯 错题集</h2><div class="empty"><div class="icon">🎉</div><p>太棒了！${{subjName}}没有错误率超过30%的题目。</p><a class="btn btn-primary" href="#home" style="margin-top:16px;">返回首页</a></div></div>`;return;
+  }}
   const wSingles=shuffle(wrongIds.filter(id=>id.startsWith('single-')).map(id=>getQ(id)));
   const wMultis=shuffle(wrongIds.filter(id=>id.startsWith('multiple-')).map(id=>getQ(id)));
   const wJudges=shuffle(wrongIds.filter(id=>id.startsWith('judge-')).map(id=>getQ(id)));
   quizQuestions=[...wSingles,...wMultis,...wJudges];
-  quizIndex=0;quizAnswered={};
+  quizIndex=0;quizAnswered={{}};
   renderQuizQuestion(app);
-}
+}}
 
 function renderQuizQuestion(app){
   if(quizIndex>=quizQuestions.length){renderQuizComplete(app);return}
