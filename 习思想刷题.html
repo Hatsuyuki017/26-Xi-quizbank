@@ -120,14 +120,20 @@ let quizQuestions = [];
 let quizIndex = 0;
 let quizAnswered = {};
 
+// Pre-compute question lookups (speed optimization)
+const XI_QS = QUESTIONS.filter(q => q.subject === 'xi');
+const MAO_QS = QUESTIONS.filter(q => q.subject === 'mao');
+const qById = {};
+for (const q of QUESTIONS) qById[q.id] = q;
+
 // ========== HELPERS ==========
 function loadStats(){try{const r=localStorage.getItem(STATS_KEY);return r?JSON.parse(r):{}}catch(e){return{}}}
 function saveStats(s){localStorage.setItem(STATS_KEY,JSON.stringify(s))}
 function loadHistory(){try{const r=localStorage.getItem(HISTORY_KEY);return r?JSON.parse(r):[]}catch(e){return[]}}
 function saveHistory(h){localStorage.setItem(HISTORY_KEY,JSON.stringify(h))}
-function getQ(id){return QUESTIONS.find(q=>q.id===id)}
+function getQ(id){return qById[id]}
 function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
-function qsBySubject(subj){return QUESTIONS.filter(q=>q.subject===subj)}
+function qsBySubject(subj){return subj==='xi'?XI_QS:MAO_QS}
 function typeLabel(t){return t==='single'?'单选题':t==='multiple'?'多选题':'判断题'}
 function typeTagClass(t){return t==='single'?'tag-single':t==='multiple'?'tag-multiple':'tag-judge'}
 
@@ -237,10 +243,11 @@ async function autoLoadBackup(){
 
 async function autoLoadOnStartup(){
   const s=loadStats(),h=loadHistory();
-  if(Object.keys(s).length>0||h.length>0)return;
-  try{const r=await fetch('./'+BACKUP_FILENAME);if(!r.ok)return;
-    const d=await r.json();if(d.stats&&d.history){saveStats(d.stats);saveHistory(d.history);}
+  if(Object.keys(s).length>0||h.length>0)return false;
+  try{const r=await fetch('./'+BACKUP_FILENAME);if(!r.ok)return false;
+    const d=await r.json();if(d.stats&&d.history){saveStats(d.stats);saveHistory(d.history);return true;}
   }catch(e){}
+  return false;
 }
 
 function importData(event){
@@ -622,7 +629,10 @@ document.addEventListener('keydown',(e)=>{
 });
 
 // ========== INIT ==========
-document.addEventListener('DOMContentLoaded',()=>{autoLoadOnStartup().then(()=>render())});
+document.addEventListener('DOMContentLoaded',()=>{
+  render();
+  autoLoadOnStartup().then(loaded=>{if(loaded)render()});
+});
 </script>
 </body>
 </html>
