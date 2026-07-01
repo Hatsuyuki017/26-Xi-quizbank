@@ -6,7 +6,7 @@
 <title>思政复习题库</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--c-bg:#f5f0eb;--c-card:#fff;--c-primary:#8b1a1a;--c-primary-light:#a52a2a;--c-accent:#c41230;--c-text:#2c2c2c;--c-text-light:#666;--c-border:#e0d5c7;--c-correct:#2d7d46;--c-correct-bg:#e8f5e9;--c-wrong:#c62828;--c-wrong-bg:#ffebee;--c-mao:#1a5c8b;--c-mao-light:#2b7abf;--c-tag:#f0e6d8;--shadow:0 2px 8px rgba(0,0,0,0.06);--radius:10px}
+:root{--c-bg:#f5f0eb;--c-card:#fff;--c-primary:#8b1a1a;--c-primary-light:#a52a2a;--c-accent:#c41230;--c-text:#2c2c2c;--c-text-light:#666;--c-border:#e0d5c7;--c-correct:#2d7d46;--c-correct-bg:#e8f5e9;--c-wrong:#c62828;--c-wrong-bg:#ffebee;--c-mao:#1a5c8b;--c-mao-light:#2b7abf;--c-tag:#f0e6d8;--shadow:0 2px 8px rgba(0,0,0,0.06);--radius:10px;--font-num:"Palatino","Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;background:var(--c-bg);color:var(--c-text);line-height:1.7;min-height:100vh}
 .container{max-width:800px;margin:0 auto;padding:16px}
 .header{background:var(--c-primary);color:#fff;padding:16px 20px;text-align:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
@@ -32,10 +32,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","
 .btn-group{display:flex;gap:10px;flex-wrap:wrap}
 .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
 .stat-item{background:var(--c-tag);border-radius:var(--radius);padding:14px;text-align:center}
-.stat-item .num{font-size:1.8rem;font-weight:700;color:var(--c-primary)}
+.stat-item .num{font-size:1.8rem;font-weight:700;color:var(--c-primary);font-family:var(--font-num)}
 .stat-item.mao-stat .num{color:var(--c-mao)}
 .stat-item .label{font-size:.8rem;color:var(--c-text-light);margin-top:2px}
-.quiz-progress{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;font-size:.85rem;color:var(--c-text-light)}
+.quiz-progress{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;font-size:.85rem;color:var(--c-text-light);font-family:var(--font-num)}
 .progress-bar{height:4px;background:var(--c-border);border-radius:2px;margin-bottom:20px;overflow:hidden}
 .progress-bar .fill{height:100%;border-radius:2px;transition:width .3s}
 .progress-bar.xi .fill{background:var(--c-primary)}
@@ -65,13 +65,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","
 .quiz-nav{display:flex;gap:10px;justify-content:center;margin-top:20px}
 .table-wrap{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:.85rem}
-th,td{padding:8px 10px;text-align:center;border-bottom:1px solid var(--c-border)}
+th,td{padding:8px 10px;text-align:center;border-bottom:1px solid var(--c-border);font-family:var(--font-num)}
 th{background:var(--c-tag);font-weight:600;white-space:nowrap;position:sticky;top:0}
 td{white-space:nowrap}
 tr:hover td{background:#fdf8f6}
-.acc-high{color:var(--c-correct);font-weight:600}
-.acc-mid{color:#e67e22;font-weight:600}
-.acc-low{color:var(--c-wrong);font-weight:600}
+.acc-high{color:var(--c-correct);font-weight:600;font-family:var(--font-num)}
+.acc-mid{color:#e67e22;font-weight:600;font-family:var(--font-num)}
+.acc-low{color:var(--c-wrong);font-weight:600;font-family:var(--font-num)}
 .text-left{text-align:left;white-space:normal;max-width:300px}
 .empty{text-align:center;padding:40px 20px;color:var(--c-text-light)}
 .empty .icon{font-size:3rem;margin-bottom:12px}
@@ -88,6 +88,29 @@ tr:hover td{background:#fdf8f6}
 .subject-tab.mao-tab.active{background:var(--c-mao);color:#fff}
 .filter-bar{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
 .hint-text{font-size:.7rem;color:var(--c-text-light);text-align:center;margin-bottom:10px}
+.detail-option{display:flex;align-items:center;padding:10px 14px;margin-bottom:6px;border:1.5px solid var(--c-border);border-radius:8px;background:#fff;gap:10px;font-size:.95rem}
+.detail-option.correct{border-color:var(--c-correct);background:var(--c-correct-bg);color:var(--c-correct)}
+.detail-option.wrong{border-color:var(--c-wrong);background:var(--c-wrong-bg);color:var(--c-wrong)}
+.detail-option .option-label,.detail-option .check-mark{flex-shrink:0;display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:50%;background:var(--c-tag);font-weight:600;font-size:.85rem}
+.detail-option.correct .option-label,.detail-option.correct .check-mark{background:var(--c-correct);color:#fff}
+.detail-option.wrong .option-label,.detail-option.wrong .check-mark{background:var(--c-wrong);color:#fff}
+.detail-option .opt-freq{margin-left:auto;font-size:.85rem;color:var(--c-text-light);white-space:nowrap;font-family:var(--font-num);text-align:right}
+.stat-row,.history-row{cursor:pointer;transition:background .15s}
+.stat-row:hover td,.history-row:hover td{background:#fdf2f2}
+.type-tabs{display:flex;gap:6px;margin-bottom:16px}
+.type-tab{flex:1;cursor:pointer;background:var(--c-tag);border-radius:8px;padding:8px 10px 6px;border:2px solid transparent;transition:all .2s;font-size:.73rem;line-height:1.3}
+.type-tab:hover{background:#e8dcc8}
+.type-tab .tab-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.type-tab .tab-label{font-weight:600;color:var(--c-text)}
+.type-tab .tab-num{font-family:var(--font-num);color:var(--c-text-light);font-size:.7rem}
+.type-tab .tab-bar{height:5px;background:var(--c-border);border-radius:3px;overflow:hidden}
+.type-tab .tab-fill{height:100%;border-radius:3px;transition:width .3s;background:#bbb}
+.type-tab.active-single{border-color:#1565c0;background:#e3f2fd}
+.type-tab.active-single .tab-fill{background:#1565c0}
+.type-tab.active-multiple{border-color:#e65100;background:#fff3e0}
+.type-tab.active-multiple .tab-fill{background:#e65100}
+.type-tab.active-judge{border-color:#2e7d32;background:#e8f5e9}
+.type-tab.active-judge .tab-fill{background:#2e7d32}
 </style>
 </head>
 <body>
@@ -119,6 +142,14 @@ let subjectSetFromHome = false; // true if clicked from home page buttons
 let quizQuestions = [];
 let quizIndex = 0;
 let quizAnswered = {};
+let quizActive = false; // 是否有一轮作答进行中
+let quizMode = 'quiz'; // 当前轮模式: 'quiz' | 'wrong'
+let quizUserAnswers = {}; // qid -> {userAnswer, isCorrect}
+let quizOrderMode = 'shuffle'; // 'sequential' | 'shuffle'
+let quizOrderChosen = false; // 是否已选择顺序模式
+let quizTypeTab = 'single'; // 当前题型标签: 'single' | 'multiple' | 'judge'
+let quizTypeRanges = {}; // 各题型在 quizQuestions 中的起止索引
+let quizTypePositions = {}; // 各题型当前作答位置: {single: 0, multiple: 72, ...}
 
 // Pre-compute question lookups (speed optimization)
 const XI_QS = QUESTIONS.filter(q => q.subject === 'xi');
@@ -127,15 +158,25 @@ const qById = {};
 for (const q of QUESTIONS) qById[q.id] = q;
 
 // ========== HELPERS ==========
-function loadStats(){try{const r=localStorage.getItem(STATS_KEY);return r?JSON.parse(r):{}}catch(e){return{}}}
+function loadStats(){try{const r=localStorage.getItem(STATS_KEY);return r?JSON.parse(r):{};}catch(e){return{}}}
 function saveStats(s){localStorage.setItem(STATS_KEY,JSON.stringify(s))}
-function loadHistory(){try{const r=localStorage.getItem(HISTORY_KEY);return r?JSON.parse(r):[]}catch(e){return[]}}
+function loadHistory(){try{const r=localStorage.getItem(HISTORY_KEY);return r?JSON.parse(r):[];}catch(e){return[]}}
 function saveHistory(h){localStorage.setItem(HISTORY_KEY,JSON.stringify(h))}
 function getQ(id){return qById[id]}
 function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
 function qsBySubject(subj){return subj==='xi'?XI_QS:MAO_QS}
 function typeLabel(t){return t==='single'?'单选题':t==='multiple'?'多选题':'判断题'}
 function typeTagClass(t){return t==='single'?'tag-single':t==='multiple'?'tag-multiple':'tag-judge'}
+// 提取毛概题目的章节号（如【第六章】→6，[第五章]→5）
+function parseChapter(q){
+  const cn={'一':1,'二':2,'三':3,'四':4,'五':5,'六':6,'七':7,'八':8,'九':9,'十':10};
+  const m=q.question.match(/[【\[]第([^章】\]]+)章/);
+  if(!m)return 99;
+  let s=m[1],n=0;
+  if(s.length===1)n=cn[s]||0;
+  else if(s==='十')n=10;else if(s.startsWith('十'))n=10+(cn[s[1]]||0);else if(s.endsWith('十'))n=(cn[s[0]]||0)*10;
+  return n||99;
+}
 
 // ========== ROUTER ==========
 function getPage(){return window.location.hash.replace('#','')||'home'}
@@ -143,7 +184,7 @@ function render(){
   const page=getPage();
   document.querySelectorAll('#mainNav a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+page));
   const app=document.getElementById('app');
-  if(page!=='quiz'&&page!=='wrong')subjectSetFromHome=false;
+  if(page.startsWith('detail-')){const qid=page.replace('detail-','');renderQuestionDetail(app,qid);return}
   switch(page){
     case'home':renderHome(app);break;
     case'quiz':renderQuiz(app);break;
@@ -213,7 +254,8 @@ function renderHome(app){
   `;
 }
 
-function setSubject(s){currentSubject=s;subjectSetFromHome=true;}
+function setSubject(s){currentSubject=s;subjectSetFromHome=true;render();}
+function setSubjectAndGo(s,mode){currentSubject=s;subjectSetFromHome=true;if(window.location.hash==='#'+mode){render()}else{window.location.hash='#'+mode}}
 
 function clearAllData(){
   if(confirm('确定要清空所有本机记录吗？\n\n这将删除：\n- 所有作答统计\n- 所有错题记录\n- 所有作答历史\n\n此操作不可恢复！')){
@@ -257,12 +299,13 @@ function importData(event){
   r.onload=function(e){try{const d=JSON.parse(e.target.result);
     if(d.stats&&d.history){saveStats(d.stats);saveHistory(d.history);alert('✅ 备份恢复成功！');render()}
     else{alert('❌ 文件格式不正确')}
-  }catch(err){alert('❌ 无法解析该文件')}};
+  }catch(err){alert('❌ 无法解析该文件')}
   r.readAsText(f);event.target.value='';
+};
 }
 
 // ========== SUBJECT CHOOSER ==========
-function renderSubjectChooser(app,mode){{
+function renderSubjectChooser(app,mode){
   const mao=buildSubjectStats('mao'),xi=buildSubjectStats('xi');
   const isQuiz=mode==='quiz';
   const totalMao=mao.total,totalXi=xi.total;
@@ -271,92 +314,180 @@ function renderSubjectChooser(app,mode){{
   const label=isQuiz?'完整题库':'错题集';
   app.innerHTML=`
     <div class="card" style="text-align:center;">
-      <h2>${{isQuiz?'📝':'🎯'}} 选择学科 - ${{label}}</h2>
+      <h2>${isQuiz?'📝':'🎯'} 选择学科 - ${label}</h2>
       <div class="btn-group" style="flex-direction:column;margin-top:16px;">
-        <a class="btn btn-mao btn-block" href="#${{mode}}" onclick="setSubject('mao')">📕 毛泽东思想（${{maoCount}} 题）</a>
-        <a class="btn btn-primary btn-block" href="#${{mode}}" onclick="setSubject('xi')">📘 习近平思想（${{xiCount}} 题）</a>
+        <button class="btn btn-mao btn-block" onclick="setSubjectAndGo('mao','${mode}')">📕 毛泽东思想（${maoCount} 题）</button>
+        <button class="btn btn-primary btn-block" onclick="setSubjectAndGo('xi','${mode}')">📘 习近平思想（${xiCount} 题）</button>
         <a class="btn btn-outline btn-block" href="#home">🏠 返回首页</a>
       </div>
     </div>`;
-}}
+}
 
 // ========== QUIZ ==========
-function renderQuiz(app){{
-  if(!subjectSetFromHome){{renderSubjectChooser(app,'quiz');return}}
-  subjectSetFromHome=false;
-  const qs=qsBySubject(currentSubject);
-  const singles=shuffle(qs.filter(q=>q.type==='single'));
-  const multis=shuffle(qs.filter(q=>q.type==='multiple'));
-  const judges=shuffle(qs.filter(q=>q.type==='judge'));
-  quizQuestions=[...singles,...multis,...judges];
-  quizIndex=0;quizAnswered={{}};
-  renderQuizQuestion(app);
-}}
+function renderQuiz(app){
+  if(quizActive&&quizMode==='quiz'){renderQuizQuestion(app);return}
+  if(!subjectSetFromHome){renderSubjectChooser(app,'quiz');return}
+  // 习概无章节顺序，直接乱序开始
+  if(currentSubject==='xi'){quizOrderMode='shuffle';quizOrderChosen=true;startQuizRound('quiz');return}
+  if(!quizOrderChosen){renderOrderChooser(app,'quiz');return}
+  startQuizRound('quiz');
+}
 
-function renderWrong(app){{
-  if(!subjectSetFromHome){{renderSubjectChooser(app,'wrong');return}}
-  subjectSetFromHome=false;
-  const stats=loadStats();
-  const wrongIds=[];
-  for(const q of qsBySubject(currentSubject)){{
-    const s=stats[q.id];
-    if(s&&s.attempts>0&&s.wrongRate>30)wrongIds.push(q.id);
-  }}
-  if(wrongIds.length===0){{
-    const subjName=currentSubject==='mao'?'毛概':'习概';
-    app.innerHTML=`<div class="card"><h2>🎯 错题集</h2><div class="empty"><div class="icon">🎉</div><p>太棒了！${{subjName}}没有错误率超过30%的题目。</p><a class="btn btn-primary" href="#home" style="margin-top:16px;">返回首页</a></div></div>`;return;
-  }}
-  const wSingles=shuffle(wrongIds.filter(id=>id.startsWith('single-')).map(id=>getQ(id)));
-  const wMultis=shuffle(wrongIds.filter(id=>id.startsWith('multiple-')).map(id=>getQ(id)));
-  const wJudges=shuffle(wrongIds.filter(id=>id.startsWith('judge-')).map(id=>getQ(id)));
-  quizQuestions=[...wSingles,...wMultis,...wJudges];
-  quizIndex=0;quizAnswered={{}};
-  renderQuizQuestion(app);
-}}
+function renderWrong(app){
+  if(quizActive&&quizMode==='wrong'){renderQuizQuestion(app);return}
+  if(!subjectSetFromHome){renderSubjectChooser(app,'wrong');return}
+  if(currentSubject==='xi'){quizOrderMode='shuffle';quizOrderChosen=true;startQuizRound('wrong');return}
+  if(!quizOrderChosen){renderOrderChooser(app,'wrong');return}
+  startQuizRound('wrong');
+}
+
+function renderOrderChooser(app,mode){
+  const subjName='毛泽东思想';
+  const isQuiz=mode==='quiz';
+  const label=isQuiz?'完整题库':'错题集';
+  app.innerHTML=`
+    <div class="card" style="text-align:center;">
+      <h2>📝 ${label} - ${subjName}</h2>
+      <p style="color:var(--c-text-light);margin:8px 0;">请选择作答顺序</p>
+      <div class="btn-group" style="flex-direction:column;margin-top:12px;">
+        <button class="btn btn-mao btn-block" onclick="quizOrderMode='sequential';quizOrderChosen=true;startQuizRound('${mode}')">📋 按章节顺序作答</button>
+        <button class="btn btn-outline btn-block" onclick="quizOrderMode='shuffle';quizOrderChosen=true;startQuizRound('${mode}')">🔀 乱序作答</button>
+        <a class="btn btn-outline btn-block" href="#home">🏠 返回首页</a>
+      </div>
+    </div>`;
+}
+
+function startQuizRound(mode){
+  subjectSetFromHome=false;quizActive=true;quizMode=mode;quizUserAnswers={};
+  const qs=qsBySubject(currentSubject);
+  let singles=qs.filter(q=>q.type==='single'),multis=qs.filter(q=>q.type==='multiple'),judges=qs.filter(q=>q.type==='judge');
+  if(mode==='quiz'){
+    if(quizOrderMode==='shuffle'){singles=shuffle(singles);multis=shuffle(multis);judges=shuffle(judges)}
+    else{
+      // 毛概按章排序：章节号→sourceOrder
+      const byChap=(a,b)=>{const ca=parseChapter(a),cb=parseChapter(b);return ca!==cb?ca-cb:a.sourceOrder-b.sourceOrder};
+      singles.sort(byChap);multis.sort(byChap);judges.sort(byChap);
+    }
+  }else{
+    // wrong mode: build from stats
+    const stats=loadStats();
+    const wrongIds=[];
+    for(const q of qs){
+      const s=stats[q.id];
+      if(s&&s.attempts>0&&s.wrongRate>30)wrongIds.push(q.id);
+    }
+    if(wrongIds.length===0){
+      const subjName=currentSubject==='mao'?'毛概':'习概';
+      const app=document.getElementById('app');
+      app.innerHTML=`<div class="card"><h2>🎯 错题集</h2><div class="empty"><div class="icon">🎉</div><p>太棒了！${subjName}没有错误率超过30%的题目。</p><a class="btn btn-primary" href="#home" style="margin-top:16px;">返回首页</a></div></div>`;
+      quizActive=false;quizOrderChosen=false;return;
+    }
+    singles=shuffle(wrongIds.filter(id=>id.startsWith('single-')).map(id=>getQ(id)));
+    multis=shuffle(wrongIds.filter(id=>id.startsWith('multiple-')).map(id=>getQ(id)));
+    judges=shuffle(wrongIds.filter(id=>id.startsWith('judge-')).map(id=>getQ(id)));
+  }
+  quizQuestions=[...singles,...multis,...judges];
+  // 计算各题型范围
+  const sEnd=singles.length,mEnd=sEnd+multis.length,jEnd=mEnd+judges.length;
+  quizTypeRanges={single:{start:0,end:sEnd},multiple:{start:sEnd,end:mEnd},judge:{start:mEnd,end:jEnd}};
+  // 初始化各题型位置
+  quizTypePositions={single:0,multiple:sEnd,judge:mEnd};
+  // 默认跳到第一个有题目的题型
+  if(singles.length>0){quizTypeTab='single';quizIndex=0}
+  else if(multis.length>0){quizTypeTab='multiple';quizIndex=sEnd}
+  else if(judges.length>0){quizTypeTab='judge';quizIndex=mEnd}
+  else{quizTypeTab='single';quizIndex=0}
+  quizAnswered={};
+  renderQuizQuestion(document.getElementById('app'));
+}
 
 function renderQuizQuestion(app){
   if(quizIndex>=quizQuestions.length){renderQuizComplete(app);return}
   const q=quizQuestions[quizIndex],total=quizQuestions.length;
-  const progress=Math.round(((quizIndex+1)/total)*100);
+  const answeredCount=Object.keys(quizAnswered).length;
+  const progress=total>0?Math.round((answeredCount/total)*100):0;
   const isXi=q.subject==='xi';
   const barClass=isXi?'xi':'mao';
   const tLabel=typeLabel(q.type),tTag=typeTagClass(q.type);
   const keyHint='⌨ 1-4 选项 · Enter 提交 · ← → 翻题';
 
+  // 恢复已答题目的显示状态
+  const already=quizAnswered[q.id];
+  const ua=already?quizUserAnswers[q.id]:null;
+
   let optionsHTML='';
   if(q.type==='judge'){
+    const trueCls=already?(q.answer==='正确'?'correct':(ua&&ua.userAnswer==='正确'?'wrong':'')):'';
+    const falseCls=already?(q.answer==='错误'?'correct':(ua&&ua.userAnswer==='错误'?'wrong':'')):'';
     optionsHTML=`
-      <button class="option" data-label="true" onclick="selectJudgeOption(this,'true')"><span class="option-label">✓</span>正确</button>
-      <button class="option" data-label="false" onclick="selectJudgeOption(this,'false')"><span class="option-label">✗</span>错误</button>`;
+      <button class="option ${trueCls} ${already?'disabled':''}" data-label="true" ${already?'disabled':''} onclick="selectJudgeOption(this,'true')"><span class="option-label">✓</span>正确</button>
+      <button class="option ${falseCls} ${already?'disabled':''}" data-label="false" ${already?'disabled':''} onclick="selectJudgeOption(this,'false')"><span class="option-label">✗</span>错误</button>`;
   }else if(q.type==='single'){
     for(const o of q.options){
-      optionsHTML+=`<button class="option" data-label="${o.label}" onclick="selectSingleOption(this)"><span class="option-label">${o.label}</span>${o.text}</button>`;
+      let cls='';
+      if(already){
+        if(o.label===q.answer)cls='correct';
+        else if(ua&&ua.userAnswer===o.label)cls='wrong';
+      }
+      optionsHTML+=`<button class="option ${cls} ${already?'disabled':''}" data-label="${o.label}" ${already?'disabled':''} onclick="selectSingleOption(this)"><span class="option-label">${o.label}</span>${o.text}</button>`;
     }
   }else{
     for(const o of q.options){
-      optionsHTML+=`<label class="option" data-label="${o.label}"><input type="checkbox" value="${o.label}" onchange="toggleMultiOption(this)"><span class="check-mark">${o.label}</span>${o.text}</label>`;
+      let cls='';const ca=q.answer.split('、').map(s=>s.trim());
+      if(already){
+        if(ca.includes(o.label))cls='correct';
+        else if(ua&&ua.checked&&ua.checked.includes(o.label))cls='wrong';
+      }
+      optionsHTML+=`<label class="option ${cls} ${already?'disabled':''}" data-label="${o.label}"><input type="checkbox" value="${o.label}" ${already?'disabled':''} onchange="toggleMultiOption(this)"><span class="check-mark">${o.label}</span>${o.text}</label>`;
     }
   }
 
-  const already=quizAnswered[q.id];
+  // 恢复 feedback
+  let savedFeedback='';
+  if(already&&ua){
+    if(ua.isCorrect)savedFeedback='✅ 回答正确！';
+    else if(q.type==='multiple')savedFeedback=`❌ 回答错误。正确答案是 <strong>${q.answer}</strong>。你的答案：${ua.userAnswer||'(未选)'}`;
+    else if(q.type==='judge')savedFeedback=`❌ 回答错误。正确答案是 <strong>${q.answer}</strong>。`;
+    else savedFeedback=`❌ 回答错误。正确答案是 <strong>${q.answer}</strong>。`;
+  }
+
   const subjectTag=isXi?'<span class="tag tag-xi">习概</span>':'<span class="tag tag-mao">毛概</span>';
+
+  // 构建题型选项卡（进度条形式）
+  let typeTabsHTML='';
+  const ranges=quizTypeRanges;
+  const types=[
+    {key:'single',label:'单选题',cls:'active-single',count:ranges.single?ranges.single.end-ranges.single.start:0},
+    {key:'multiple',label:'多选题',cls:'active-multiple',count:ranges.multiple?ranges.multiple.end-ranges.multiple.start:0},
+    {key:'judge',label:'判断题',cls:'active-judge',count:ranges.judge?ranges.judge.end-ranges.judge.start:0}
+  ];
+  const visibleTypes=types.filter(t=>t.count>0);
+  typeTabsHTML='<div class="type-tabs">';
+  for(const t of visibleTypes){
+    const prog=getTypeProgress(t.key);
+    const pct=prog.total>0?Math.round(prog.answered/prog.total*100):0;
+    const active=quizTypeTab===t.key?' '+t.cls:'';
+    typeTabsHTML+=`<button class="type-tab${active}" onclick="jumpToTypeTab('${t.key}')"><div class="tab-head"><span class="tab-label">${t.label}</span><span class="tab-num">${prog.answered}/${prog.total}</span></div><div class="tab-bar"><div class="tab-fill" style="width:${pct}%"></div></div></button>`;
+  }
+  typeTabsHTML+='</div>';
 
   app.innerHTML=`
     <div class="card ${isXi?'':'mao-card'}">
       <div class="quiz-progress">
         <span>${subjectTag} <span class="tag ${tTag}">${tLabel}</span> 第 ${q.sourceOrder} 题</span>
-        <span>${quizIndex+1} / ${total}</span>
+        <span>${answeredCount} / ${total} 已答</span>
       </div>
       <div class="progress-bar ${barClass}"><div class="fill" style="width:${progress}%"></div></div>
-      <div class="hint-text">${keyHint}</div>
+      ${typeTabsHTML}
       <div class="question-block"><div class="question-text">${q.question}</div></div>
       <div class="options" id="optionsContainer">${optionsHTML}</div>
-      <div class="feedback" id="feedback"></div>
+      <div class="hint-text">${keyHint}</div>
+      <div class="feedback ${already&&ua?(ua.isCorrect?'correct-fb':'wrong-fb'):''}" id="feedback" style="${already?'display:block;':''}">${savedFeedback}</div>
       <div class="quiz-nav" id="quizNav">
         ${quizIndex>0?`<button class="btn btn-outline" onclick="prevQuestion()">← 上一题</button>`:'<span style="width:90px;display:inline-block;"></span>'}
-        ${!already?`<button class="btn ${isXi?'btn-primary':'btn-mao'}" onclick="submitAnswer('${q.id}')">✅ 提交本题</button>`:''}
-        ${already?'<span style="font-size:.85rem;color:var(--c-text-light);">本题已作答</span>':''}
+        ${!already?`<button class="btn ${isXi?'btn-primary':'btn-mao'}" onclick="submitAnswer('${q.id}')">✅ 提交本题</button>`:`<span style="font-size:.85rem;color:var(--c-text-light);">本题已作答</span>`}
         ${quizIndex<total-1?`<button class="btn btn-outline" onclick="nextQuestion()">下一题 →</button>`:`<button class="btn btn-outline" onclick="nextQuestion()">完成 →</button>`}
+        <button class="btn btn-danger btn-sm" onclick="endQuiz()">🏁 结束作答</button>
       </div>
     </div>`;
 }
@@ -387,6 +518,7 @@ function submitSingle(qid){
   if(!sel){alert('请先选择一个选项');return}
   quizAnswered[qid]=true;
   const label=sel.getAttribute('data-label'),q=getQ(qid),isCorrect=q.answer===label;
+  quizUserAnswers[qid]={userAnswer:label,isCorrect};
   markAndFeedback(qid,label,isCorrect,q.answer);
   recordAttempt(q,label,isCorrect);
 }
@@ -404,6 +536,7 @@ function submitMultiple(qid){
   checked.sort();const ua=checked.join('、')||'(未选)';
   const ca=q.answer.split('、').map(s=>s.trim()).sort(),cs=ca.join('、');
   const isCorrect=checked.length===ca.length&&checked.every((v,i)=>v===ca[i]);
+  quizUserAnswers[qid]={userAnswer:ua,isCorrect,checked:[...checked]};
   c.querySelectorAll('.option').forEach(el=>el.classList.add('disabled'));
   c.querySelectorAll('input[type="checkbox"]').forEach(cb=>cb.disabled=true);
   c.querySelectorAll('.option').forEach(el=>{
@@ -424,6 +557,7 @@ function submitJudge(qid){
   const val=sel.getAttribute('data-label'),q=getQ(qid);
   const userAns=val==='true'?'正确':'错误';
   const isCorrect=userAns===q.answer;
+  quizUserAnswers[qid]={userAnswer:userAns,isCorrect};
   const c=document.getElementById('optionsContainer');
   c.querySelectorAll('.option').forEach(el=>el.classList.add('disabled'));
   const correctOpt=c.querySelector(`[data-label="${q.answer==='正确'?'true':'false'}"]`);
@@ -455,17 +589,44 @@ function updateQuizNav(){
   document.getElementById('quizNav').innerHTML=`
     ${quizIndex>0?`<button class="btn btn-outline" onclick="prevQuestion()">← 上一题</button>`:'<span style="width:90px;display:inline-block;"></span>'}
     <span style="font-size:.85rem;color:var(--c-text-light);">本题已作答</span>
-    ${quizIndex<quizQuestions.length-1?`<button class="btn btn-outline" onclick="nextQuestion()">下一题 →</button>`:`<button class="btn btn-outline" onclick="nextQuestion()">完成 →</button>`}`;
+    ${quizIndex<quizQuestions.length-1?`<button class="btn btn-outline" onclick="nextQuestion()">下一题 →</button>`:`<button class="btn btn-outline" onclick="nextQuestion()">完成 →</button>`}
+    <button class="btn btn-danger btn-sm" onclick="endQuiz()">🏁 结束作答</button>`;
+  updateTypeTabProgress();
+}
+
+function updateTypeTabProgress(){
+  const tabEls=document.querySelectorAll('.type-tab');
+  if(!tabEls.length)return;
+  const keys=['single','multiple','judge'];
+  for(let i=0;i<Math.min(tabEls.length,keys.length);i++){
+    const prog=getTypeProgress(keys[i]);
+    const pct=prog.total>0?Math.round(prog.answered/prog.total*100):0;
+    const numEl=tabEls[i].querySelector('.tab-num');
+    const fillEl=tabEls[i].querySelector('.tab-fill');
+    if(numEl)numEl.textContent=prog.answered+'/'+prog.total;
+    if(fillEl)fillEl.style.width=pct+'%';
+  }
 }
 
 function recordAttempt(q,userAnswer,isCorrect){
   const stats=loadStats(),sid=q.id;
-  if(!stats[sid])stats[sid]={attempts:0,correct:0,wrong:0,accuracy:0,wrongRate:0};
+  if(!stats[sid])stats[sid]={attempts:0,correct:0,wrong:0,accuracy:0,wrongRate:0,optionCounts:{}};
+  if(!stats[sid].optionCounts)stats[sid].optionCounts={};
   stats[sid].attempts++;
   if(isCorrect)stats[sid].correct++;else stats[sid].wrong++;
   const t=stats[sid].attempts;
   stats[sid].accuracy=Math.round(stats[sid].correct/t*100);
   stats[sid].wrongRate=Math.round(stats[sid].wrong/t*100);
+  // 记录各选项选择次数
+  const ocs=stats[sid].optionCounts;
+  if(q.type==='multiple'){
+    const parts=userAnswer.split('、').map(s=>s.trim()).filter(s=>s&&s!=='(未选)');
+    parts.forEach(p=>{ocs[p]=(ocs[p]||0)+1});
+  }else if(q.type==='judge'){
+    ocs[userAnswer]=(ocs[userAnswer]||0)+1;
+  }else{
+    ocs[userAnswer]=(ocs[userAnswer]||0)+1;
+  }
   saveStats(stats);
   const history=loadHistory();
   history.unshift({
@@ -477,8 +638,57 @@ function recordAttempt(q,userAnswer,isCorrect){
   saveHistory(history);
 }
 
-function nextQuestion(){quizIndex++;renderQuizQuestion(document.getElementById('app'))}
-function prevQuestion(){if(quizIndex>0){quizIndex--;renderQuizQuestion(document.getElementById('app'))}}
+function nextQuestion(){
+  if(quizIndex<quizQuestions.length-1){saveTypePosition();quizIndex++;updateTypeTabFromIndex();}
+  renderQuizQuestion(document.getElementById('app'));
+}
+function prevQuestion(){
+  if(quizIndex>0){saveTypePosition();quizIndex--;updateTypeTabFromIndex();}
+  renderQuizQuestion(document.getElementById('app'));
+}
+
+function saveTypePosition(){quizTypePositions[quizTypeTab]=quizIndex;}
+
+function jumpToTypeTab(type){
+  const range=quizTypeRanges[type];
+  if(!range||range.start>=range.end)return;
+  if(quizTypeTab!==type){
+    saveTypePosition();
+    quizTypeTab=type;
+    const saved=quizTypePositions[type];
+    quizIndex=(saved!==undefined&&saved>=range.start&&saved<range.end)?saved:range.start;
+  }
+  renderQuizQuestion(document.getElementById('app'));
+}
+
+function getTypeProgress(type){
+  const range=quizTypeRanges[type];
+  if(!range||range.start>=range.end)return{answered:0,total:0};
+  let answered=0;
+  for(let i=range.start;i<range.end;i++){
+    const q=quizQuestions[i];
+    if(q&&quizAnswered[q.id])answered++;
+  }
+  return{answered,total:range.end-range.start};
+}
+
+function updateTypeTabFromIndex(){
+  // 根据当前 quizIndex 自动更新 quizTypeTab
+  const ranges=quizTypeRanges;
+  if(ranges.single&&quizIndex>=ranges.single.start&&quizIndex<ranges.single.end)quizTypeTab='single';
+  else if(ranges.multiple&&quizIndex>=ranges.multiple.start&&quizIndex<ranges.multiple.end)quizTypeTab='multiple';
+  else if(ranges.judge&&quizIndex>=ranges.judge.start&&quizIndex<ranges.judge.end)quizTypeTab='judge';
+}
+
+function endQuiz(){
+  const answered=Object.keys(quizAnswered).length;
+  const unanswered=quizQuestions.length-answered;
+  if(unanswered>0){
+    if(!confirm(`还有 ${unanswered} 题未作答，确定要结束本轮吗？`))return;
+  }
+  quizOrderChosen=false;
+  renderQuizComplete(document.getElementById('app'));
+}
 
 function renderQuizComplete(app){
   let sessionCorrect=0,sessionTotal=0;
@@ -486,6 +696,8 @@ function renderQuizComplete(app){
   for(const qid of Object.keys(quizAnswered)){
     if(quizAnswered[qid]){sessionTotal++;const last=history.find(h=>h.id===qid);if(last&&last.isCorrect)sessionCorrect++;}
   }
+  // 清除本轮状态
+  quizActive=false;quizUserAnswers={};
   const isXi=currentSubject==='xi';
   app.innerHTML=`
     <div class="card" style="text-align:center;">
@@ -496,8 +708,8 @@ function renderQuizComplete(app){
         <div class="stat-item"><div class="num">${sessionTotal>0?Math.round(sessionCorrect/sessionTotal*100):0}%</div><div class="label">本轮正确率</div></div>
       </div>
       <div class="btn-group" style="justify-content:center;margin-top:20px;">
-        <a class="btn ${isXi?'btn-primary':'btn-mao'}" href="#quiz">🔄 重新作答</a>
-        <a class="btn btn-outline" href="#wrong">🎯 错题集</a>
+        <button class="btn ${isXi?'btn-primary':'btn-mao'}" onclick="subjectSetFromHome=false;render()">🔄 开始新一轮</button>
+        <button class="btn btn-outline" onclick="window.location.hash='#wrong'">🎯 错题集</button>
         <a class="btn btn-outline" href="#home">🏠 返回首页</a>
       </div>
     </div>`;
@@ -515,7 +727,7 @@ function renderStats(app){
       const accuracy=s?s.accuracy:'-',wrongRate=s?s.wrongRate:'-';
       let ac='';if(typeof accuracy==='number'){if(accuracy>=80)ac='acc-high';else if(accuracy>=50)ac='acc-mid';else ac='acc-low'}
       let wc='';if(typeof wrongRate==='number'){if(wrongRate>50)wc='acc-low';else if(wrongRate>30)wc='acc-mid'}
-      rows+=`<tr><td>${q.sourceOrder}</td><td><span class="tag ${typeTagClass(q.type)}">${typeLabel(q.type)}</span></td><td class="text-left">${q.question.substring(0,60)}…</td><td>${q.answer}</td><td>${attempts}</td><td>${correct}</td><td>${wrong}</td><td class="${ac}">${accuracy}${typeof accuracy==='number'?'%':''}</td><td class="${wc}">${wrongRate}${typeof wrongRate==='number'?'%':''}</td></tr>`;
+      rows+=`<tr class="stat-row" onclick="goToQuestionFromStats('${q.id}')"><td>${q.sourceOrder}</td><td><span class="tag ${typeTagClass(q.type)}">${typeLabel(q.type)}</span></td><td class="text-left">${q.question.substring(0,60)}…</td><td>${q.answer}</td><td>${attempts}</td><td>${correct}</td><td>${wrong}</td><td class="${ac}">${accuracy}${typeof accuracy==='number'?'%':''}</td><td class="${wc}">${wrongRate}${typeof wrongRate==='number'?'%':''}</td></tr>`;
     }
     return rows;
   }
@@ -553,7 +765,7 @@ function switchStatsTab(subj){
       const accuracy=s?s.accuracy:'-',wrongRate=s?s.wrongRate:'-';
       let ac='';if(typeof accuracy==='number'){if(accuracy>=80)ac='acc-high';else if(accuracy>=50)ac='acc-mid';else ac='acc-low'}
       let wc='';if(typeof wrongRate==='number'){if(wrongRate>50)wc='acc-low';else if(wrongRate>30)wc='acc-mid'}
-      rows+=`<tr><td>${q.sourceOrder}</td><td><span class="tag ${typeTagClass(q.type)}">${typeLabel(q.type)}</span></td><td class="text-left">${q.question.substring(0,60)}…</td><td>${q.answer}</td><td>${attempts}</td><td>${correct}</td><td>${wrong}</td><td class="${ac}">${accuracy}${typeof accuracy==='number'?'%':''}</td><td class="${wc}">${wrongRate}${typeof wrongRate==='number'?'%':''}</td></tr>`;
+      rows+=`<tr class="stat-row" onclick="goToQuestionFromStats('${q.id}')"><td>${q.sourceOrder}</td><td><span class="tag ${typeTagClass(q.type)}">${typeLabel(q.type)}</span></td><td class="text-left">${q.question.substring(0,60)}…</td><td>${q.answer}</td><td>${attempts}</td><td>${correct}</td><td>${wrong}</td><td class="${ac}">${accuracy}${typeof accuracy==='number'?'%':''}</td><td class="${wc}">${wrongRate}${typeof wrongRate==='number'?'%':''}</td></tr>`;
     }
     return rows;
   }
@@ -578,10 +790,13 @@ function renderHistory(app){
   }
   const filtered=historySubject==='all'?history:history.filter(h=>h.subject===historySubject);
   let rows='';
-  for(const h of filtered){
+  for(let i=0;i<filtered.length;i++){
+    const h=filtered[i];
     const icon=h.isCorrect?'✅':'❌';
     const subjTag=h.subject==='mao'?'<span class="tag tag-mao">毛概</span>':'<span class="tag tag-xi">习概</span>';
-    rows+=`<tr><td>${h.time}</td><td>${subjTag}</td><td>${h.sourceOrder}</td><td><span class="tag ${h.type==='单选'?'tag-single':h.type==='多选'?'tag-multiple':'tag-judge'}">${h.type}</span></td><td>${h.userAnswer}</td><td>${h.correctAnswer}</td><td>${icon}</td></tr>`;
+    // 找到原始历史中的索引
+    const histIdx=history.indexOf(h);
+    rows+=`<tr class="history-row" onclick="goToQuestionFromHistory('${h.id}',${histIdx})"><td>${h.time}</td><td>${subjTag}</td><td>${h.sourceOrder}</td><td><span class="tag ${h.type==='单选'?'tag-single':h.type==='多选'?'tag-multiple':'tag-judge'}">${h.type}</span></td><td>${h.userAnswer}</td><td>${h.correctAnswer}</td><td>${icon}</td></tr>`;
   }
 
   app.innerHTML=`
@@ -606,6 +821,99 @@ function renderHistory(app){
 function setHistoryFilter(s){historySubject=s;renderHistory(document.getElementById('app'))}
 function clearHistory(){if(confirm('确定要清空所有作答记录吗？（不影响统计数据）')){localStorage.setItem(HISTORY_KEY,JSON.stringify([]));render()}}
 
+// ========== QUESTION DETAIL ==========
+let detailHistoryIndex = -1; // 从历史记录跳转时使用
+
+function goToQuestionFromHistory(qid, histIdx){
+  detailHistoryIndex = histIdx;
+  window.location.hash = '#detail-'+qid;
+}
+
+function goToQuestionFromStats(qid){
+  detailHistoryIndex = -1;
+  window.location.hash = '#detail-'+qid;
+}
+
+function renderQuestionDetail(app, qid){
+  const q = getQ(qid);
+  if(!q){app.innerHTML='<div class="card"><h2>题目不存在</h2><a class="btn btn-outline" href="#home">返回首页</a></div>';return;}
+  const stats = loadStats();
+  const s = stats[qid] || {attempts:0,correct:0,wrong:0,optionCounts:{}};
+  const ocs = s.optionCounts || {};
+  const isXi = q.subject==='xi';
+  const subjTag = isXi?'<span class="tag tag-xi">习概</span>':'<span class="tag tag-mao">毛概</span>';
+  const tLabel = typeLabel(q.type);
+  const tTag = typeTagClass(q.type);
+  const totalAttempts = s.attempts || 0;
+
+  // 从历史记录获取用户答案
+  let histAnswer = null, histIsCorrect = null;
+  if(detailHistoryIndex >= 0){
+    const history = loadHistory();
+    if(detailHistoryIndex < history.length){
+      const h = history[detailHistoryIndex];
+      histAnswer = h.userAnswer;
+      histIsCorrect = h.isCorrect;
+    }
+  }
+
+  // 构建选项列表（含频率）
+  const caSet = new Set((q.answer||'').split('、').map(s=>s.trim()));
+  const uaSet = new Set((histAnswer||'').split('、').map(s=>s.trim()));
+  let optionsHTML = '';
+  if(q.type==='judge'){
+    const trueLabel = '正确', falseLabel = '错误';
+    const tc = ocs[trueLabel]||0, fc = ocs[falseLabel]||0;
+    const tPct = totalAttempts>0?Math.round(tc/totalAttempts*100):0;
+    const fPct = totalAttempts>0?Math.round(fc/totalAttempts*100):0;
+    const trueCls = caSet.has(trueLabel)?'correct':(uaSet.has(trueLabel)&&!caSet.has(trueLabel)?'wrong':'');
+    const falseCls = caSet.has(falseLabel)?'correct':(uaSet.has(falseLabel)&&!caSet.has(falseLabel)?'wrong':'');
+    optionsHTML = `
+      <div class="detail-option ${trueCls}"><span class="option-label">✓</span><span>正确</span><span class="opt-freq">${tc} 次 (${tPct}%)</span></div>
+      <div class="detail-option ${falseCls}"><span class="option-label">✗</span><span>错误</span><span class="opt-freq">${fc} 次 (${fPct}%)</span></div>`;
+  }else if(q.type==='single'){
+    for(const o of q.options){
+      const cnt = ocs[o.label]||0;
+      const pct = totalAttempts>0?Math.round(cnt/totalAttempts*100):0;
+      const cls = caSet.has(o.label)?'correct':(uaSet.has(o.label)?'wrong':'');
+      optionsHTML += `<div class="detail-option ${cls}"><span class="option-label">${o.label}</span><span>${o.text}</span><span class="opt-freq">${cnt} 次 (${pct}%)</span></div>`;
+    }
+  }else{
+    for(const o of q.options){
+      const cnt = ocs[o.label]||0;
+      const pct = totalAttempts>0?Math.round(cnt/totalAttempts*100):0;
+      const cls = caSet.has(o.label)?'correct':(uaSet.has(o.label)?'wrong':'');
+      optionsHTML += `<div class="detail-option ${cls}"><span class="check-mark">${o.label}</span><span>${o.text}</span><span class="opt-freq">${cnt} 次 (${pct}%)</span></div>`;
+    }
+  }
+
+  // 构建反馈区
+  let feedbackHTML = '';
+  if(histAnswer !== null){
+    if(histIsCorrect){
+      feedbackHTML = `<div class="feedback correct-fb show">✅ 你的回答正确：<strong>${histAnswer}</strong></div>`;
+    }else{
+      feedbackHTML = `<div class="feedback wrong-fb show">❌ 你的回答：<strong>${histAnswer}</strong>。正确答案：<strong>${q.answer}</strong></div>`;
+    }
+  }
+
+  app.innerHTML = `
+    <div class="card ${isXi?'':'mao-card'}">
+      <div class="quiz-progress">
+        <span>${subjTag} <span class="tag ${tTag}">${tLabel}</span> 第 ${q.sourceOrder} 题</span>
+        <span>累计作答 ${totalAttempts} 次 | 正确率 ${s.accuracy||0}%</span>
+      </div>
+      <div class="question-block"><div class="question-text">${q.question}</div></div>
+      <div class="options">${optionsHTML}</div>
+      ${feedbackHTML}
+      <div style="text-align:center;margin-top:8px;font-size:.75rem;color:var(--c-text-light);">绿色 = 正确答案 · 红色 = 你的错误选择 · 右侧 = 累积选择次数</div>
+      <div class="btn-group" style="justify-content:center;margin-top:16px;">
+        ${detailHistoryIndex>=0?`<button class="btn btn-outline" onclick="window.location.hash='#history'">📋 返回作答记录</button>`:`<button class="btn btn-outline" onclick="window.location.hash='#stats'">📊 返回作答统计</button>`}
+        <a class="btn btn-outline" href="#home">🏠 返回首页</a>
+      </div>
+    </div>`;
+}
+
 // ========== KEYBOARD ==========
 document.addEventListener('keydown',(e)=>{
   const page=getPage();
@@ -613,9 +921,15 @@ document.addEventListener('keydown',(e)=>{
   if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
   if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();if(quizIndex>0)prevQuestion()}
   else if(e.key==='ArrowRight'||e.key==='ArrowDown'){e.preventDefault();if(quizIndex<quizQuestions.length-1)nextQuestion()}
-  else if(e.key==='Enter'){e.preventDefault();const q=quizQuestions[quizIndex];if(!quizAnswered[q.id])submitAnswer(q.id)}
+  else if(e.key==='Enter'){
+    e.preventDefault();
+    const q=quizQuestions[quizIndex];
+    if(!q)return;
+    if(!quizAnswered[q.id])submitAnswer(q.id);
+    else if(quizIndex<quizQuestions.length-1)nextQuestion();
+  }
   else if(e.key>='1'&&e.key<='4'){
-    e.preventDefault();const q=quizQuestions[quizIndex];if(quizAnswered[q.id])return;
+    e.preventDefault();const q=quizQuestions[quizIndex];if(!q||quizAnswered[q.id])return;
     const idx=parseInt(e.key)-1,c=document.getElementById('optionsContainer');if(!c)return;
     const opts=c.querySelectorAll('.option');if(idx>=opts.length)return;
     const t=opts[idx];
