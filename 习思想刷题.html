@@ -4,28 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>思政复习题库</title>
+<link rel="stylesheet" href="themes.css">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--c-bg:#f5f0eb;--c-card:#fff;--c-primary:#8b1a1a;--c-primary-light:#a52a2a;--c-accent:#c41230;--c-text:#2c2c2c;--c-text-light:#666;--c-border:#e0d5c7;--c-correct:#2d7d46;--c-correct-bg:#e8f5e9;--c-wrong:#c62828;--c-wrong-bg:#ffebee;--c-mao:#1a5c8b;--c-mao-light:#2b7abf;--c-tag:#f0e6d8;--shadow:0 2px 8px rgba(0,0,0,0.06);--radius:10px;--font-num:"Palatino","Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif}
+:root{--shadow:0 2px 8px rgba(0,0,0,0.06);--radius:10px;--font-num:"Palatino","Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;background:var(--c-bg);color:var(--c-text);line-height:1.7;min-height:100vh}
 .container{max-width:800px;margin:0 auto;padding:16px}
-.header{background:var(--c-primary);color:#fff;padding:16px 20px;text-align:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.header{background:var(--c-primary);color:var(--c-white);padding:16px 20px;text-align:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
 .header h1{font-size:1.25rem;font-weight:600;letter-spacing:.5px}
 .header .sub{font-size:.8rem;opacity:.85;margin-top:2px}
 .nav{display:flex;gap:8px;padding:12px 16px;background:var(--c-card);border-bottom:1px solid var(--c-border);overflow-x:auto;position:sticky;top:60px;z-index:99}
 .nav a{white-space:nowrap;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:.85rem;color:var(--c-text-light);background:var(--c-tag);transition:all .2s}
-.nav a.active,.nav a:hover{background:var(--c-primary);color:#fff}
+.nav a.active,.nav a:hover{background:var(--c-primary);color:var(--c-white)}
 .card{background:var(--c-card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin-bottom:16px}
 .card h2{font-size:1.1rem;margin-bottom:12px;color:var(--c-primary)}
 .card.mao-card h2{color:var(--c-mao)}
 .btn{display:inline-block;padding:10px 22px;border:none;border-radius:8px;font-size:.95rem;cursor:pointer;text-decoration:none;text-align:center;transition:all .2s;font-weight:500}
-.btn-primary{background:var(--c-primary);color:#fff}
+.btn-primary{background:var(--c-primary);color:var(--c-white)}
 .btn-primary:hover{background:var(--c-primary-light)}
-.btn-mao{background:var(--c-mao);color:#fff}
+.btn-mao{background:var(--c-mao);color:var(--c-white)}
 .btn-mao:hover{background:var(--c-mao-light)}
-.btn-outline{background:#fff;color:var(--c-primary);border:1.5px solid var(--c-primary)}
-.btn-outline:hover{background:#fdf2f2}
-.btn-danger{background:#fff;color:var(--c-wrong);border:1.5px solid var(--c-wrong)}
+.btn-outline{background:var(--c-white);color:var(--c-primary);border:1.5px solid var(--c-primary)}
+.btn-outline:hover{background:var(--c-hover-bg)}
+.btn-danger{background:var(--c-white);color:var(--c-wrong);border:1.5px solid var(--c-wrong)}
 .btn-danger:hover{background:var(--c-wrong-bg)}
 .btn-sm{padding:5px 12px;font-size:.8rem}
 .btn-block{display:block;width:100%}
@@ -43,21 +44,21 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","
 .question-block{margin-bottom:20px}
 .question-text{font-size:1rem;line-height:1.8}
 .options{margin:16px 0}
-.option{display:block;width:100%;text-align:left;padding:12px 16px;margin-bottom:8px;border:1.5px solid var(--c-border);border-radius:8px;background:#fff;cursor:pointer;transition:all .15s;font-size:.95rem;line-height:1.6}
-.option:hover{border-color:var(--c-primary);background:#fdf8f6}
-.option.selected{border-color:var(--c-primary);background:#fdf2f2}
+.option{display:block;width:100%;text-align:left;padding:12px 16px;margin-bottom:8px;border:1.5px solid var(--c-border);border-radius:8px;background:var(--c-white);cursor:pointer;transition:all .15s;font-size:.95rem;line-height:1.6}
+.option:hover{border-color:var(--c-primary);background:var(--c-hover-light)}
+.option.selected{border-color:var(--c-primary);background:var(--c-hover-bg)}
 .option.correct{border-color:var(--c-correct);background:var(--c-correct-bg);color:var(--c-correct)}
 .option.wrong{border-color:var(--c-wrong);background:var(--c-wrong-bg);color:var(--c-wrong)}
 .option.disabled{pointer-events:none;opacity:.85}
 .option-label{display:inline-block;width:28px;height:28px;line-height:28px;text-align:center;border-radius:50%;background:var(--c-tag);margin-right:10px;font-weight:600;font-size:.85rem}
-.option.correct .option-label{background:var(--c-correct);color:#fff}
-.option.wrong .option-label{background:var(--c-wrong);color:#fff}
-.option.selected .option-label{background:var(--c-primary);color:#fff}
+.option.correct .option-label{background:var(--c-correct);color:var(--c-white)}
+.option.wrong .option-label{background:var(--c-wrong);color:var(--c-white)}
+.option.selected .option-label{background:var(--c-primary);color:var(--c-white)}
 .option input[type="checkbox"]{display:none}
 .option .check-mark{display:inline-block;width:28px;height:28px;line-height:28px;text-align:center;border-radius:4px;background:var(--c-tag);margin-right:10px;font-weight:600;font-size:.85rem;vertical-align:middle}
-.option.selected .check-mark{background:var(--c-primary);color:#fff}
-.option.correct .check-mark{background:var(--c-correct);color:#fff}
-.option.wrong .check-mark{background:var(--c-wrong);color:#fff}
+.option.selected .check-mark{background:var(--c-primary);color:var(--c-white)}
+.option.correct .check-mark{background:var(--c-correct);color:var(--c-white)}
+.option.wrong .check-mark{background:var(--c-wrong);color:var(--c-white)}
 .feedback{padding:12px 16px;border-radius:8px;margin:12px 0;font-size:.9rem;display:none}
 .feedback.show{display:block}
 .feedback.correct-fb{background:var(--c-correct-bg);color:var(--c-correct)}
@@ -68,49 +69,64 @@ table{width:100%;border-collapse:collapse;font-size:.85rem}
 th,td{padding:8px 10px;text-align:center;border-bottom:1px solid var(--c-border);font-family:var(--font-num)}
 th{background:var(--c-tag);font-weight:600;white-space:nowrap;position:sticky;top:0}
 td{white-space:nowrap}
-tr:hover td{background:#fdf8f6}
+tr:hover td{background:var(--c-hover-light)}
 .acc-high{color:var(--c-correct);font-weight:600;font-family:var(--font-num)}
-.acc-mid{color:#e67e22;font-weight:600;font-family:var(--font-num)}
+.acc-mid{color:var(--c-mid);font-weight:600;font-family:var(--font-num)}
 .acc-low{color:var(--c-wrong);font-weight:600;font-family:var(--font-num)}
 .text-left{text-align:left;white-space:normal;max-width:300px}
 .empty{text-align:center;padding:40px 20px;color:var(--c-text-light)}
 .empty .icon{font-size:3rem;margin-bottom:12px}
 @media(max-width:600px){.container{padding:10px}.card{padding:14px}.header h1{font-size:1.1rem}.stat-grid{grid-template-columns:repeat(2,1fr)}.btn{padding:8px 16px;font-size:.9rem}}
 .tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.75rem;font-weight:600}
-.tag-single{background:#e3f2fd;color:#1565c0}
-.tag-multiple{background:#fff3e0;color:#e65100}
-.tag-judge{background:#e8f5e9;color:#2e7d32}
-.tag-xi{background:#fce4ec;color:#c62828}
-.tag-mao{background:#e3f2fd;color:var(--c-mao)}
+.tag-single{background:var(--c-single-bg);color:var(--c-single)}
+.tag-multiple{background:var(--c-multiple-bg);color:var(--c-multiple)}
+.tag-judge{background:var(--c-judge-bg);color:var(--c-judge)}
+.tag-xi{background:var(--c-xi-tag-bg);color:var(--c-xi-tag)}
+.tag-mao{background:var(--c-mao-tag-bg);color:var(--c-mao)}
 .subject-tabs{display:flex;gap:0;margin-bottom:16px;border-radius:8px;overflow:hidden}
 .subject-tab{flex:1;padding:12px;text-align:center;cursor:pointer;border:none;font-size:.95rem;font-weight:500;transition:all .2s;background:var(--c-tag);color:var(--c-text-light)}
-.subject-tab.active{background:var(--c-primary);color:#fff}
-.subject-tab.mao-tab.active{background:var(--c-mao);color:#fff}
+.subject-tab.active{background:var(--c-primary);color:var(--c-white)}
+.subject-tab.mao-tab.active{background:var(--c-mao);color:var(--c-white)}
 .filter-bar{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
 .hint-text{font-size:.7rem;color:var(--c-text-light);text-align:center;margin-bottom:10px}
-.detail-option{display:flex;align-items:center;padding:10px 14px;margin-bottom:6px;border:1.5px solid var(--c-border);border-radius:8px;background:#fff;gap:10px;font-size:.95rem}
+.detail-option{display:flex;align-items:center;padding:10px 14px;margin-bottom:6px;border:1.5px solid var(--c-border);border-radius:8px;background:var(--c-white);gap:10px;font-size:.95rem}
 .detail-option.correct{border-color:var(--c-correct);background:var(--c-correct-bg);color:var(--c-correct)}
 .detail-option.wrong{border-color:var(--c-wrong);background:var(--c-wrong-bg);color:var(--c-wrong)}
 .detail-option .option-label,.detail-option .check-mark{flex-shrink:0;display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:50%;background:var(--c-tag);font-weight:600;font-size:.85rem}
-.detail-option.correct .option-label,.detail-option.correct .check-mark{background:var(--c-correct);color:#fff}
-.detail-option.wrong .option-label,.detail-option.wrong .check-mark{background:var(--c-wrong);color:#fff}
+.detail-option.correct .option-label,.detail-option.correct .check-mark{background:var(--c-correct);color:var(--c-white)}
+.detail-option.wrong .option-label,.detail-option.wrong .check-mark{background:var(--c-wrong);color:var(--c-white)}
 .detail-option .opt-freq{margin-left:auto;font-size:.85rem;color:var(--c-text-light);white-space:nowrap;font-family:var(--font-num);text-align:right}
 .stat-row,.history-row{cursor:pointer;transition:background .15s}
-.stat-row:hover td,.history-row:hover td{background:#fdf2f2}
+.stat-row:hover td,.history-row:hover td{background:var(--c-hover-bg)}
 .type-tabs{display:flex;gap:6px;margin-bottom:16px}
 .type-tab{flex:1;cursor:pointer;background:var(--c-tag);border-radius:8px;padding:8px 10px 6px;border:2px solid transparent;transition:all .2s;font-size:.73rem;line-height:1.3}
-.type-tab:hover{background:#e8dcc8}
+.type-tab:hover{background:var(--c-tag-hover)}
 .type-tab .tab-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
 .type-tab .tab-label{font-weight:600;color:var(--c-text)}
 .type-tab .tab-num{font-family:var(--font-num);color:var(--c-text-light);font-size:.7rem}
 .type-tab .tab-bar{height:5px;background:var(--c-border);border-radius:3px;overflow:hidden}
-.type-tab .tab-fill{height:100%;border-radius:3px;transition:width .3s;background:#bbb}
-.type-tab.active-single{border-color:#1565c0;background:#e3f2fd}
-.type-tab.active-single .tab-fill{background:#1565c0}
-.type-tab.active-multiple{border-color:#e65100;background:#fff3e0}
-.type-tab.active-multiple .tab-fill{background:#e65100}
-.type-tab.active-judge{border-color:#2e7d32;background:#e8f5e9}
-.type-tab.active-judge .tab-fill{background:#2e7d32}
+.type-tab .tab-fill{height:100%;border-radius:3px;transition:width .3s;background:var(--c-tab-fill)}
+.type-tab.active-single{border-color:var(--c-single);background:var(--c-single-bg)}
+.type-tab.active-single .tab-fill{background:var(--c-single)}
+.type-tab.active-multiple{border-color:var(--c-multiple);background:var(--c-multiple-bg)}
+.type-tab.active-multiple .tab-fill{background:var(--c-multiple)}
+.type-tab.active-judge{border-color:var(--c-judge);background:var(--c-judge-bg)}
+.type-tab.active-judge .tab-fill{background:var(--c-judge)}
+.quiz-layout{display:flex;gap:16px;align-items:flex-start}
+.quiz-main{flex:1;min-width:0}
+.quiz-notes{width:220px;flex-shrink:0;border:1px solid var(--c-border);border-radius:8px;overflow:hidden}
+.quiz-notes .notes-title{font-size:.78rem;font-weight:600;padding:7px 10px;background:var(--c-tag);border-bottom:1px solid var(--c-border)}
+.quiz-notes textarea{display:block;width:100%;min-height:100px;border:none;padding:10px;font-size:.8rem;font-family:inherit;line-height:1.5;resize:vertical;outline:none;background:var(--c-white)}
+.quiz-notes textarea:focus{background:var(--c-notes-focus)}
+.quiz-notes .notes-locked{padding:20px 10px;font-size:.75rem;color:var(--c-text-light);text-align:center}
+.theme-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.theme-card{cursor:pointer;border:2px solid var(--c-border);border-radius:8px;padding:10px;transition:all .2s;background:var(--c-card)}
+.theme-card:hover{border-color:var(--c-primary);box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.theme-swatch{display:flex;gap:4px;margin-bottom:6px}
+.theme-dot{width:20px;height:20px;border-radius:50%;flex-shrink:0;border:1px solid rgba(0,0,0,0.1)}
+.theme-name{font-size:.78rem;font-weight:500;color:var(--c-text);text-align:center}
+.chart-wrap{overflow-x:auto;margin:4px 0}
+@media(max-width:768px){.quiz-layout{flex-direction:column}.quiz-notes{width:100%}}
 </style>
 </head>
 <body>
@@ -126,6 +142,7 @@ tr:hover td{background:#fdf8f6}
   <a href="#wrong">🎯 错题集</a>
   <a href="#stats">📊 作答统计</a>
   <a href="#history">📋 作答记录</a>
+  <a href="#themes" id="navThemes">🎨 主题</a>
 </nav>
 
 <div class="container" id="app"><div class="loading">加载题库数据…</div></div>
@@ -135,6 +152,8 @@ const QUESTIONS = [{"id": "single-1", "type": "single", "sourceOrder": 1, "quest
 
 const STATS_KEY = 'xjp-xi-quiz-stats-v1';
 const HISTORY_KEY = 'xjp-xi-quiz-attempts-v1';
+const NOTES_KEY = 'xjp-xi-quiz-notes-v1';
+const DAILY_KEY = 'xjp-xi-quiz-daily-v1';
 const BACKUP_FILENAME = '思政题库备份.json';
 
 let currentSubject = 'mao'; // default
@@ -163,6 +182,10 @@ function saveStats(s){localStorage.setItem(STATS_KEY,JSON.stringify(s))}
 function loadHistory(){try{const r=localStorage.getItem(HISTORY_KEY);return r?JSON.parse(r):[];}catch(e){return[]}}
 function saveHistory(h){localStorage.setItem(HISTORY_KEY,JSON.stringify(h))}
 function getQ(id){return qById[id]}
+function loadNotes(){try{const r=localStorage.getItem(NOTES_KEY);return r?JSON.parse(r):{}}catch(e){return{}}}
+function saveNotes(n){localStorage.setItem(NOTES_KEY,JSON.stringify(n))}
+function loadNote(qid){const n=loadNotes();return n[qid]||''}
+function saveNote(qid){const n=loadNotes();const el=document.getElementById('notesText');if(el){const v=el.value.trim();if(v)n[qid]=v;else delete n[qid];saveNotes(n)}}
 function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
 function qsBySubject(subj){return subj==='xi'?XI_QS:MAO_QS}
 function typeLabel(t){return t==='single'?'单选题':t==='multiple'?'多选题':'判断题'}
@@ -191,10 +214,81 @@ function render(){
     case'wrong':renderWrong(app);break;
     case'stats':renderStats(app);break;
     case'history':renderHistory(app);break;
+    case'themes':renderThemeChooser(app);break;
     default:renderHome(app);
   }
 }
 window.addEventListener('hashchange',render);
+
+// ========== THEME ==========
+const THEME_KEY = 'quiz-theme-v1';
+const THEME_LIST = [
+  {id:'warm', name:'暖色（默认）', c1:'#f5f0eb',c2:'#8b1a1a',c3:'#1a5c8b',c4:'#1565c0',c5:'#e65100',c6:'#c41230'},
+  {id:'ouc-default', name:'OUC Default', c1:'#EFF6FF',c2:'#1E3A8A',c3:'#2563EB',c4:'#60A5FA',c5:'#1E293B',c6:'#DBEAFE'},
+  {id:'brunneophobia', name:'Brunneophobia', c1:'#EED3B4',c2:'#564335',c3:'#B4450F',c4:'#D5944F',c5:'#2A170E',c6:'#D5944F'},
+  {id:'van-dyke', name:'Van Dyke', c1:'#ECC2BC',c2:'#443C5E',c3:'#BF7185',c4:'#A99FBF',c5:'#3D2B27',c6:'#A99FBF'},
+  {id:'back-in-black', name:'Back in Black', c1:'#F0D9E4',c2:'#4A3F4B',c3:'#806C79',c4:'#C1A0AC',c5:'#161315',c6:'#C1A0AC'},
+  {id:'belle-of-the-ball', name:'Belle of the Ball', c1:'#E2CBC0',c2:'#76762C',c3:'#E54A39',c4:'#D2876A',c5:'#354D04',c6:'#CEAB96'},
+  {id:'pine-tree', name:'Pine Tree', c1:'#EEC86F',c2:'#A7581A',c3:'#B17885',c4:'#DEA620',c5:'#2B2F22',c6:'#DEA620'},
+  {id:'provence-blue', name:'Provence Blue', c1:'#AABCAF',c2:'#525C79',c3:'#6E7C8B',c4:'#899C9A',c5:'#35425E',c6:'#899C9A'},
+  {id:'fresco-blue', name:'Fresco Blue', c1:'#A6E0F4',c2:'#044B66',c3:'#09799E',c4:'#47A9CF',c5:'#021F2E',c6:'#47A9CF'},
+  {id:'monet', name:'Monet', c1:'#F7F4D5',c2:'#105666',c3:'#839958',c4:'#D3968C',c5:'#0A3323',c6:'#D3968C'},
+  {id:'narcissus', name:'Narcissus', c1:'#DDD5C8',c2:'#BE6C1A',c3:'#C79548',c4:'#B99590',c5:'#6E3C1F',c6:'#B99590'},
+  {id:'roman-empire', name:'Roman Empire', c1:'#ECE8E1',c2:'#781428',c3:'#B41E1E',c4:'#4A6E41',c5:'#581C5A',c6:'#D4AF37'},
+  {id:'greece', name:'Greece', c1:'#F5F0E4',c2:'#3069AF',c3:'#BC5226',c4:'#628030',c5:'#5A2A5C',c6:'#D4AF37'},
+  {id:'kanagawa', name:'Kanagawa', c1:'#EDE9DE',c2:'#0D264C',c3:'#1A4E84',c4:'#96BAD2',c5:'#1D1923',c6:'#D0E0EE'},
+  {id:'starry-night', name:'Starry Night', c1:'#F0D044',c2:'#16321E',c3:'#3060A5',c4:'#699BC8',c5:'#142458',c6:'#C68C34'},
+  {id:'a-thousand-li', name:'A Thousand Li', c1:'#DACBAA',c2:'#30694C',c3:'#60946E',c4:'#6EA5C3',c5:'#234E70',c6:'#B7762D'},
+  {id:'and-quiet-flows-the-don', name:'And Quiet Flows the Don', c1:'#8E7846',c2:'#34465A',c3:'#7A4224',c4:'#765634',c5:'#581A18',c6:'#6E6C68'},
+  {id:'cyberpunk-edgerunners', name:'Cyberpunk Edgerunners', c1:'#E1FF08',c2:'#0F2062',c3:'#CD1423',c4:'#EE1278',c5:'#0E081C',c6:'#0AEE64'},
+  {id:'grand-budapest-hotel', name:'Grand Budapest Hotel', c1:'#F7EBD7',c2:'#805894',c3:'#B0883C',c4:'#ED949E',c5:'#8F3441',c6:'#A8B2C4'},
+  {id:'renaissance-florence', name:'Renaissance Florence', c1:'#EEE4D0',c2:'#2E4676',c3:'#36503C',c4:'#AC5432',c5:'#553622',c6:'#BE9434'},
+  {id:'soviet-avant-garde', name:'Soviet Avant-Garde', c1:'#E1D6CD',c2:'#C41C1C',c3:'#32508A',c4:'#76726C',c5:'#181412',c6:'#C89620'},
+  {id:'constantinople', name:'Constantinople', c1:'#ECE1CF',c2:'#662041',c3:'#324C3A',c4:'#AA7032',c5:'#1E3458',c6:'#C3962A'},
+  {id:'france', name:'France', c1:'#E8DECD',c2:'#B42028',c3:'#8F6C94',c4:'#7A7E84',c5:'#2C4A8A',c6:'#8E853A'},
+  {id:'kyoto', name:'Kyoto', c1:'#EAE2D4',c2:'#505E44',c3:'#6E5440',c4:'#747E78',c5:'#222842',c6:'#CCB8B2'},
+  {id:'siamese-dream', name:'Siamese Dream', c1:'#EEE2D0',c2:'#BC6928',c3:'#969187',c4:'#C69E41',c5:'#2A4430',c6:'#B6B4C1'},
+];
+let currentTheme = 'warm';
+let previewThemeId = null;
+
+function loadTheme(){const t=localStorage.getItem(THEME_KEY);return t||'warm';}
+function saveTheme(t){localStorage.setItem(THEME_KEY,t);}
+function applyTheme(t){currentTheme=t;document.documentElement.setAttribute('data-theme',t);}
+function previewTheme(t){previewThemeId=t;document.documentElement.setAttribute('data-theme',t);}
+function restoreTheme(){previewThemeId=null;document.documentElement.setAttribute('data-theme',currentTheme);}
+
+function renderThemeChooser(app){
+  const saved=loadTheme();
+  let cards='';
+  for(const t of THEME_LIST){
+    cards+=`<div class="theme-card" onmouseenter="previewTheme('${t.id}')" onmouseleave="restoreTheme()" onclick="selectTheme('${t.id}')">
+      <div class="theme-swatch">
+        <span class="theme-dot" style="background:${t.c1}"></span>
+        <span class="theme-dot" style="background:${t.c2}"></span>
+        <span class="theme-dot" style="background:${t.c3}"></span>
+        <span class="theme-dot" style="background:${t.c4}"></span>
+        <span class="theme-dot" style="background:${t.c5}"></span>
+        <span class="theme-dot" style="background:${t.c6}"></span>
+      </div>
+      <div class="theme-name">${t.name}${saved===t.id?' ✅':''}</div>
+    </div>`;
+  }
+  app.innerHTML=`
+    <div class="card">
+      <h2>🎨 选择配色主题</h2>
+      <p style="font-size:.8rem;color:var(--c-text-light);margin-bottom:12px;">悬停预览 · 点击确认（共 ${THEME_LIST.length} 套）</p>
+      <div class="theme-grid">${cards}</div>
+      <div style="text-align:center;margin-top:16px;">
+        <a class="btn btn-outline" href="#home">🏠 返回首页</a>
+      </div>
+    </div>`;
+}
+
+function selectTheme(t){
+  applyTheme(t);saveTheme(t);restoreTheme();
+  renderThemeChooser(document.getElementById('app'));
+}
 
 // ========== HOME PAGE ==========
 function buildSubjectStats(subj){
@@ -220,13 +314,13 @@ function renderHome(app){
       <div class="stat-grid">
         <div class="stat-item"><div class="num">${mao.total}</div><div class="label">毛概题库</div></div>
         <div class="stat-item mao-stat"><div class="num">${mao.attempted}</div><div class="label">毛概已作答</div></div>
-        <div class="stat-item mao-stat"><div class="num">${mao.accuracy}%</div><div class="label">毛概正确率</div></div>
+        <div class="stat-item mao-stat"><div class="num" style="cursor:pointer;text-decoration:underline dotted" onclick="renderAccuracyDetail('mao')" title="点击查看正确率趋势">${mao.accuracy}%</div><div class="label">毛概正确率</div></div>
         <div class="stat-item mao-stat"><div class="num">${mao.wrongCount}</div><div class="label">毛概错题</div></div>
       </div>
       <div class="stat-grid" style="margin-top:12px;">
         <div class="stat-item"><div class="num">${xi.total}</div><div class="label">习概题库</div></div>
         <div class="stat-item"><div class="num">${xi.attempted}</div><div class="label">习概已作答</div></div>
-        <div class="stat-item"><div class="num">${xi.accuracy}%</div><div class="label">习概正确率</div></div>
+        <div class="stat-item"><div class="num" style="cursor:pointer;text-decoration:underline dotted" onclick="renderAccuracyDetail('xi')" title="点击查看正确率趋势">${xi.accuracy}%</div><div class="label">习概正确率</div></div>
         <div class="stat-item"><div class="num">${xi.wrongCount}</div><div class="label">习概错题</div></div>
       </div>
     </div>
@@ -264,7 +358,7 @@ function clearAllData(){
 }
 
 function exportData(){
-  const d={exportedAt:new Date().toLocaleString('zh-CN',{hour12:false}),stats:loadStats(),history:loadHistory()};
+  const d={exportedAt:new Date().toLocaleString('zh-CN',{hour12:false}),stats:loadStats(),history:loadHistory(),notes:loadNotes()};
   const j=JSON.stringify(d,null,2);
   const b=new Blob([j],{type:'application/json'});
   const u=URL.createObjectURL(b);
@@ -279,7 +373,7 @@ async function autoLoadBackup(){
     const d=await r.json();
     if(!d.stats||!d.history){alert('❌ 文件格式不正确');return}
     if(!confirm('确定要恢复备份吗？当前记录将被覆盖！'))return;
-    saveStats(d.stats);saveHistory(d.history);alert('✅ 备份恢复成功！');render();
+    saveStats(d.stats);saveHistory(d.history);if(d.notes)saveNotes(d.notes);alert('✅ 备份恢复成功！');render();
   }catch(e){alert('❌ 加载失败：'+e.message)}
 }
 
@@ -287,7 +381,7 @@ async function autoLoadOnStartup(){
   const s=loadStats(),h=loadHistory();
   if(Object.keys(s).length>0||h.length>0)return false;
   try{const r=await fetch('./'+BACKUP_FILENAME);if(!r.ok)return false;
-    const d=await r.json();if(d.stats&&d.history){saveStats(d.stats);saveHistory(d.history);return true;}
+    const d=await r.json();if(d.stats&&d.history){saveStats(d.stats);saveHistory(d.history);if(d.notes)saveNotes(d.notes);return true;}
   }catch(e){}
   return false;
 }
@@ -297,7 +391,7 @@ function importData(event){
   if(!confirm('确定要恢复备份吗？当前记录将被覆盖！')){event.target.value='';return}
   const r=new FileReader();
   r.onload=function(e){try{const d=JSON.parse(e.target.result);
-    if(d.stats&&d.history){saveStats(d.stats);saveHistory(d.history);alert('✅ 备份恢复成功！');render()}
+    if(d.stats&&d.history){saveStats(d.stats);saveHistory(d.history);if(d.notes)saveNotes(d.notes);alert('✅ 备份恢复成功！');render()}
     else{alert('❌ 文件格式不正确')}
   }catch(err){alert('❌ 无法解析该文件')}
   r.readAsText(f);event.target.value='';
@@ -479,15 +573,23 @@ function renderQuizQuestion(app){
       </div>
       <div class="progress-bar ${barClass}"><div class="fill" style="width:${progress}%"></div></div>
       ${typeTabsHTML}
-      <div class="question-block"><div class="question-text">${q.question}</div></div>
-      <div class="options" id="optionsContainer">${optionsHTML}</div>
-      <div class="hint-text">${keyHint}</div>
-      <div class="feedback ${already&&ua?(ua.isCorrect?'correct-fb':'wrong-fb'):''}" id="feedback" style="${already?'display:block;':''}">${savedFeedback}</div>
-      <div class="quiz-nav" id="quizNav">
-        ${quizIndex>0?`<button class="btn btn-outline" onclick="prevQuestion()">← 上一题</button>`:'<span style="width:90px;display:inline-block;"></span>'}
-        ${!already?`<button class="btn ${isXi?'btn-primary':'btn-mao'}" onclick="submitAnswer('${q.id}')">✅ 提交本题</button>`:`<span style="font-size:.85rem;color:var(--c-text-light);">本题已作答</span>`}
-        ${quizIndex<total-1?`<button class="btn btn-outline" onclick="nextQuestion()">下一题 →</button>`:`<button class="btn btn-outline" onclick="nextQuestion()">完成 →</button>`}
-        <button class="btn btn-danger btn-sm" onclick="endQuiz()">🏁 结束作答</button>
+      <div class="quiz-layout">
+        <div class="quiz-main">
+          <div class="question-block"><div class="question-text">${q.question}</div></div>
+          <div class="options" id="optionsContainer">${optionsHTML}</div>
+          <div class="hint-text">${keyHint}</div>
+          <div class="feedback ${already&&ua?(ua.isCorrect?'correct-fb':'wrong-fb'):''}" id="feedback" style="${already?'display:block;':''}">${savedFeedback}</div>
+          <div class="quiz-nav" id="quizNav">
+            ${quizIndex>0?`<button class="btn btn-outline" onclick="prevQuestion()">← 上一题</button>`:'<span style="width:90px;display:inline-block;"></span>'}
+            ${!already?`<button class="btn ${isXi?'btn-primary':'btn-mao'}" onclick="submitAnswer('${q.id}')">✅ 提交本题</button>`:`<span style="font-size:.85rem;color:var(--c-text-light);">本题已作答</span>`}
+            ${quizIndex<total-1?`<button class="btn btn-outline" onclick="nextQuestion()">下一题 →</button>`:`<button class="btn btn-outline" onclick="nextQuestion()">完成 →</button>`}
+            <button class="btn btn-danger btn-sm" onclick="endQuiz()">🏁 结束作答</button>
+          </div>
+        </div>
+        <div class="quiz-notes">
+          <div class="notes-title">📝 笔记</div>
+          ${already?`<textarea id="notesText" oninput="saveNote('${q.id}')">${loadNote(q.id).replace(/</g,'&lt;')}</textarea>`:`<div class="notes-locked">🔒 提交本题后可编辑笔记</div>`}
+        </div>
       </div>
     </div>`;
 }
@@ -592,6 +694,18 @@ function updateQuizNav(){
     ${quizIndex<quizQuestions.length-1?`<button class="btn btn-outline" onclick="nextQuestion()">下一题 →</button>`:`<button class="btn btn-outline" onclick="nextQuestion()">完成 →</button>`}
     <button class="btn btn-danger btn-sm" onclick="endQuiz()">🏁 结束作答</button>`;
   updateTypeTabProgress();
+  unlockNotesPanel();
+}
+
+function unlockNotesPanel(){
+  const panel=document.querySelector('.quiz-notes');
+  if(!panel)return;
+  const q=quizQuestions[quizIndex];
+  if(!q||!quizAnswered[q.id])return;
+  const note=loadNote(q.id);
+  panel.innerHTML=`<div class="notes-title">📝 笔记</div><textarea id="notesText" oninput="saveNote('${q.id}')"></textarea>`;
+  const ta=document.getElementById('notesText');
+  if(ta)ta.value=note;
 }
 
 function updateTypeTabProgress(){
@@ -636,7 +750,27 @@ function recordAttempt(q,userAnswer,isCorrect){
     userAnswer:userAnswer,correctAnswer:q.answer,isCorrect:isCorrect
   });
   saveHistory(history);
+  // 记录每日统计
+  const daily=loadDaily();
+  const today=new Date().toISOString().slice(0,10);
+  if(!daily[today])daily[today]=newDayRecord();
+  const d=daily[today];
+  d.attempted++;if(isCorrect)d.correct++;
+  const subj=d.subjects[q.subject];
+  subj.att++;if(isCorrect)subj.cor++;
+  const type=subj.types[q.type];
+  type.att++;if(isCorrect)type.cor++;
+  saveDaily(daily);
 }
+
+function newDayRecord(){
+  const mk=()=>({att:0,cor:0});
+  const mkSubj=()=>({att:0,cor:0,types:{single:mk(),multiple:mk(),judge:mk()}});
+  return{attempted:0,correct:0,subjects:{mao:mkSubj(),xi:mkSubj()}};
+}
+
+function loadDaily(){try{const r=localStorage.getItem(DAILY_KEY);return r?JSON.parse(r):{}}catch(e){return{}}}
+function saveDaily(d){localStorage.setItem(DAILY_KEY,JSON.stringify(d))}
 
 function nextQuestion(){
   if(quizIndex<quizQuestions.length-1){saveTypePosition();quizIndex++;updateTypeTabFromIndex();}
@@ -897,21 +1031,109 @@ function renderQuestionDetail(app, qid){
     }
   }
 
+  const noteContent = loadNote(qid);
   app.innerHTML = `
     <div class="card ${isXi?'':'mao-card'}">
       <div class="quiz-progress">
         <span>${subjTag} <span class="tag ${tTag}">${tLabel}</span> 第 ${q.sourceOrder} 题</span>
         <span>累计作答 ${totalAttempts} 次 | 正确率 ${s.accuracy||0}%</span>
       </div>
-      <div class="question-block"><div class="question-text">${q.question}</div></div>
-      <div class="options">${optionsHTML}</div>
-      ${feedbackHTML}
-      <div style="text-align:center;margin-top:8px;font-size:.75rem;color:var(--c-text-light);">绿色 = 正确答案 · 红色 = 你的错误选择 · 右侧 = 累积选择次数</div>
+      <div class="quiz-layout">
+        <div class="quiz-main">
+          <div class="question-block"><div class="question-text">${q.question}</div></div>
+          <div class="options">${optionsHTML}</div>
+          ${feedbackHTML}
+          <div style="text-align:center;margin-top:8px;font-size:.75rem;color:var(--c-text-light);">绿色 = 正确答案 · 红色 = 你的错误选择 · 右侧 = 累积选择次数</div>
+        </div>
+        <div class="quiz-notes">
+          <div class="notes-title">📝 笔记</div>
+          <textarea id="notesText" oninput="saveNote('${qid}')">${noteContent.replace(/</g,'&lt;')}</textarea>
+        </div>
+      </div>
       <div class="btn-group" style="justify-content:center;margin-top:16px;">
         ${detailHistoryIndex>=0?`<button class="btn btn-outline" onclick="window.location.hash='#history'">📋 返回作答记录</button>`:`<button class="btn btn-outline" onclick="window.location.hash='#stats'">📊 返回作答统计</button>`}
         <a class="btn btn-outline" href="#home">🏠 返回首页</a>
       </div>
     </div>`;
+}
+
+// ========== ACCURACY TREND ==========
+function renderAccuracyDetail(subj){
+  const app=document.getElementById('app');
+  const daily=loadDaily();
+  const dates=Object.keys(daily).sort();
+  if(dates.length===0){
+    app.innerHTML=`<div class="card"><h2>📈 正确率趋势</h2><div class="empty"><div class="icon">📭</div><p>暂无作答数据。</p><a class="btn btn-outline" href="#home">返回首页</a></div></div>`;return;
+  }
+  const subjName=subj==='mao'?'毛泽东思想':'习近平思想';
+  const isXi=subj==='xi';
+  // 计算总趋势
+  let totalPts=[],singlePts=[],multiplePts=[],judgePts=[];
+  for(const d of dates){
+    const day=daily[d];
+    const acc=day.attempted>0?Math.round(day.correct/day.attempted*100):null;
+    totalPts.push({date:d.slice(5),acc});
+    const s=day.subjects[subj];
+    if(s){
+      singlePts.push({date:d.slice(5),acc:s.types.single.att>0?Math.round(s.types.single.cor/s.types.single.att*100):null});
+      multiplePts.push({date:d.slice(5),acc:s.types.multiple.att>0?Math.round(s.types.multiple.cor/s.types.multiple.att*100):null});
+      judgePts.push({date:d.slice(5),acc:s.types.judge.att>0?Math.round(s.types.judge.cor/s.types.judge.att*100):null});
+    }
+  }
+  // 统计汇总
+  let sAtt=0,sCor=0,mAtt=0,mCor=0,jAtt=0,jCor=0;
+  for(const d of dates){const s=daily[d].subjects[subj];if(s){
+    sAtt+=s.types.single.att;sCor+=s.types.single.cor;
+    mAtt+=s.types.multiple.att;mCor+=s.types.multiple.cor;
+    jAtt+=s.types.judge.att;jCor+=s.types.judge.cor;
+  }}
+  const sAcc=sAtt>0?Math.round(sCor/sAtt*100):'-';
+  const mAcc=mAtt>0?Math.round(mCor/mAtt*100):'-';
+  const jAcc=jAtt>0?Math.round(jCor/jAtt*100):'-';
+
+  app.innerHTML=`
+    <div class="card ${isXi?'':'mao-card'}">
+      <h2>📈 ${subjName} 正确率趋势</h2>
+      <div class="stat-grid" style="margin-bottom:16px;">
+        <div class="stat-item"><div class="num">${sAcc}${sAcc!=='-'?'%':''}</div><div class="label">单选题正确率</div></div>
+        <div class="stat-item"><div class="num">${mAcc}${mAcc!=='-'?'%':''}</div><div class="label">多选题正确率</div></div>
+        <div class="stat-item"><div class="num">${jAcc}${jAcc!=='-'?'%':''}</div><div class="label">判断题正确率</div></div>
+      </div>
+      <h3 style="font-size:.9rem;margin-bottom:8px;">📊 总体趋势</h3>
+      ${drawLineChart(totalPts,'var(--c-primary)',300)}
+      <h3 style="font-size:.9rem;margin:16px 0 8px;">📊 分题型趋势</h3>
+      ${drawLineChart(singlePts,'var(--c-single)',200)}
+      ${drawLineChart(multiplePts,'var(--c-multiple)',200)}
+      ${drawLineChart(judgePts,'var(--c-judge)',200)}
+      <div style="text-align:center;margin-top:16px;">
+        <a class="btn btn-outline" href="#home">🏠 返回首页</a>
+      </div>
+    </div>`;
+}
+
+function drawLineChart(points,color,h){
+  const valid=points.filter(p=>p.acc!==null);
+  if(valid.length===0)return'<div style="color:var(--c-text-light);font-size:.75rem;text-align:center;padding:8px;">暂无数据</div>';
+  const W=700,H=h,pad=30,w=W-pad*2,ht=H-pad-10;
+  const maxAcc=100,minAcc=0;
+  let poly='',dots='',labels='';
+  for(let i=0;i<points.length;i++){
+    const p=points[i];
+    const x=pad+(points.length>1?i/(points.length-1)*w:w/2);
+    const y=p.acc!==null?pad+(1-(p.acc-minAcc)/(maxAcc-minAcc))*ht:pad+ht;
+    if(p.acc!==null){poly+=`${x.toFixed(2)},${y.toFixed(2)} `;dots+=`<circle cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="3" fill="${color}"/>`;}
+    if(i%Math.max(1,Math.floor(points.length/8))===0||i===points.length-1)
+      labels+=`<text x="${x.toFixed(2)}" y="${H-5}" text-anchor="middle" font-size="9" fill="var(--c-chart-label)">${p.date}</text>`;
+  }
+  return `<div class="chart-wrap"><svg viewBox="0 0 ${W} ${H}" style="width:100%;max-width:700px;display:block;margin:0 auto;">
+    <line x1="${pad}" y1="${pad}" x2="${pad}" y2="${pad+ht}" stroke="var(--c-chart-axis)" stroke-width="1"/>
+    <line x1="${pad}" y1="${pad+ht}" x2="${pad+w}" y2="${pad+ht}" stroke="var(--c-chart-axis)" stroke-width="1"/>
+    <text x="8" y="${pad+5}" font-size="9" fill="var(--c-chart-label)">100%</text>
+    <text x="8" y="${pad+ht+3}" font-size="9" fill="var(--c-chart-label)">0%</text>
+    ${poly?`<polyline points="${poly.trim()}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round"/>`:''}
+    ${dots}
+    ${labels.replace(/"#888"/g,'"var(--c-chart-label)"')}
+  </svg></div>`;
 }
 
 // ========== KEYBOARD ==========
@@ -944,6 +1166,7 @@ document.addEventListener('keydown',(e)=>{
 
 // ========== INIT ==========
 document.addEventListener('DOMContentLoaded',()=>{
+  applyTheme(loadTheme());
   render();
   autoLoadOnStartup().then(loaded=>{if(loaded)render()});
 });

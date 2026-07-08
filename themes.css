@@ -1,0 +1,410 @@
+/* ============================================================
+   配色方案文件 — 思政复习题库
+   通过切换 [data-theme] 属性可更换整套配色（24 套可选）
+   用法：<html data-theme="warm"> 或 data-theme="ouc-default" 等
+   来源：Thomas Shang's Tufte-Style Book Template 24 palettes
+   ============================================================ */
+
+/* ---- 全局固定色（不随主题变化）---- */
+:root {
+  --c-correct:         #2d7d46;
+  --c-correct-bg:      #e8f5e9;
+  --c-wrong:           #c62828;
+  --c-wrong-bg:        #ffebee;
+  --c-judge:           #2e7d32;
+  --c-judge-bg:        #e8f5e9;
+  --c-card:            #fff;
+  --c-text:            #2c2c2c;
+  --c-text-light:      #666;
+  /* 固定色 — 全局通用 */
+  --c-white:           #fff;
+  --c-hover-light:     #fdf8f6;
+  --c-hover-bg:        #fdf2f2;
+  --c-mid:             #e67e22;
+  --c-xi-tag-bg:       #fce4ec;
+  --c-xi-tag:          #c62828;
+  --c-mao-tag-bg:      #e3f2fd;
+  --c-tab-fill:        #bbb;
+  --c-tag-hover:       #e8dcc8;
+  --c-notes-focus:     #fffbeb;
+  --c-chart-axis:      #ddd;
+  --c-chart-label:     #888;
+}
+
+/* ---- 默认主题 (warm) — 保持原有配色 ---- */
+:root,
+[data-theme="warm"] {
+  --c-bg:              #f5f0eb;
+  --c-primary:         #8b1a1a;
+  --c-mao:             #1a5c8b;
+  --c-single:          #1565c0;
+  --c-multiple:        #e65100;
+  --c-primary-light:   #a52a2a;
+  --c-mao-light:       #2b7abf;
+  --c-single-bg:       #e3f2fd;
+  --c-multiple-bg:     #fff3e0;
+  --c-accent:          #c41230;
+  --c-border:          #e0d5c7;
+  --c-tag:             #f0e6d8;
+}
+
+/* ---- ouc-default (0) ---- */
+[data-theme="ouc-default"] {
+  --c-bg:              #EFF6FF;
+  --c-primary:         #1E3A8A;
+  --c-mao:             #2563EB;
+  --c-single:          #60A5FA;
+  --c-multiple:        #1E293B;
+  --c-primary-light:   #3f579b;
+  --c-mao-light:       #457aee;
+  --c-single-bg:       #d7e8fd;
+  --c-multiple-bg:     #c6c9ce;
+  --c-accent:          #1E293B;
+  --c-border:          #dbe2ea;
+  --c-tag:             #e5ecf4;
+}
+/* ---- brunneophobia (1) ---- */
+[data-theme="brunneophobia"] {
+  --c-bg:              #EED3B4;
+  --c-primary:         #564335;
+  --c-mao:             #B4450F;
+  --c-single:          #D5944F;
+  --c-multiple:        #2A170E;
+  --c-primary-light:   #6f5f53;
+  --c-mao-light:       #bf6033;
+  --c-single-bg:       #f4e4d3;
+  --c-multiple-bg:     #c9c5c2;
+  --c-accent:          #2A170E;
+  --c-border:          #dac2a5;
+  --c-tag:             #e4caac;
+}
+/* ---- van-dyke (2) ---- */
+[data-theme="van-dyke"] {
+  --c-bg:              #ECC2BC;
+  --c-primary:         #443C5E;
+  --c-mao:             #BF7185;
+  --c-single:          #A99FBF;
+  --c-multiple:        #3D2B27;
+  --c-primary-light:   #605976;
+  --c-mao-light:       #c88697;
+  --c-single-bg:       #e9e7ef;
+  --c-multiple-bg:     #cecac9;
+  --c-accent:          #3D2B27;
+  --c-border:          #d9b2ac;
+  --c-tag:             #e2bab4;
+}
+/* ---- back-in-black (3) ---- */
+[data-theme="back-in-black"] {
+  --c-bg:              #F0D9E4;
+  --c-primary:         #4A3F4B;
+  --c-mao:             #806C79;
+  --c-single:          #C1A0AC;
+  --c-multiple:        #161315;
+  --c-primary-light:   #655b66;
+  --c-mao-light:       #93828d;
+  --c-single-bg:       #efe7ea;
+  --c-multiple-bg:     #c4c4c4;
+  --c-accent:          #161315;
+  --c-border:          #dcc7d1;
+  --c-tag:             #e6d0da;
+}
+/* ---- belle-of-the-ball (4) ---- */
+[data-theme="belle-of-the-ball"] {
+  --c-bg:              #E2CBC0;
+  --c-primary:         #76762C;
+  --c-mao:             #E54A39;
+  --c-single:          #D2876A;
+  --c-multiple:        #354D04;
+  --c-primary-light:   #8a8a4b;
+  --c-mao-light:       #e86556;
+  --c-single-bg:       #f3e1d9;
+  --c-multiple-bg:     #ccd2c0;
+  --c-accent:          #354D04;
+  --c-border:          #cfbab0;
+  --c-tag:             #d8c2b8;
+}
+/* ---- pine-tree (5) ---- */
+[data-theme="pine-tree"] {
+  --c-bg:              #EEC86F;
+  --c-primary:         #A7581A;
+  --c-mao:             #B17885;
+  --c-single:          #DEA620;
+  --c-multiple:        #2B2F22;
+  --c-primary-light:   #b4713c;
+  --c-mao-light:       #bc8c97;
+  --c-single-bg:       #f6e8c7;
+  --c-multiple-bg:     #cacbc7;
+  --c-accent:          #2B2F22;
+  --c-border:          #dab866;
+  --c-tag:             #e4c06a;
+}
+/* ---- provence-blue (6) ---- */
+[data-theme="provence-blue"] {
+  --c-bg:              #AABCAF;
+  --c-primary:         #525C79;
+  --c-mao:             #6E7C8B;
+  --c-single:          #899C9A;
+  --c-multiple:        #35425E;
+  --c-primary-light:   #6b748d;
+  --c-mao-light:       #838f9c;
+  --c-single-bg:       #e1e6e5;
+  --c-multiple-bg:     #cccfd6;
+  --c-accent:          #35425E;
+  --c-border:          #9caca1;
+  --c-tag:             #a3b4a8;
+}
+/* ---- fresco-blue (7) ---- */
+[data-theme="fresco-blue"] {
+  --c-bg:              #A6E0F4;
+  --c-primary:         #044B66;
+  --c-mao:             #09799E;
+  --c-single:          #47A9CF;
+  --c-multiple:        #021F2E;
+  --c-primary-light:   #29667c;
+  --c-mao-light:       #2d8dac;
+  --c-single-bg:       #d1e9f3;
+  --c-multiple-bg:     #bfc7ca;
+  --c-accent:          #021F2E;
+  --c-border:          #98cee0;
+  --c-tag:             #9fd7ea;
+}
+/* ---- monet (8) ---- */
+[data-theme="monet"] {
+  --c-bg:              #F7F4D5;
+  --c-primary:         #105666;
+  --c-mao:             #839958;
+  --c-single:          #D3968C;
+  --c-multiple:        #0A3323;
+  --c-primary-light:   #336f7c;
+  --c-mao-light:       #95a871;
+  --c-single-bg:       #f4e4e2;
+  --c-multiple-bg:     #c1ccc8;
+  --c-accent:          #0A3323;
+  --c-border:          #e3e0c3;
+  --c-tag:             #edeacc;
+}
+/* ---- narcissus (9) ---- */
+[data-theme="narcissus"] {
+  --c-bg:              #DDD5C8;
+  --c-primary:         #BE6C1A;
+  --c-mao:             #C79548;
+  --c-single:          #B99590;
+  --c-multiple:        #6E3C1F;
+  --c-primary-light:   #c7823c;
+  --c-mao-light:       #cfa463;
+  --c-single-bg:       #ede4e3;
+  --c-multiple-bg:     #dacec7;
+  --c-accent:          #6E3C1F;
+  --c-border:          #cbc3b8;
+  --c-tag:             #d4ccc0;
+}
+/* ---- roman-empire (10) ---- */
+[data-theme="roman-empire"] {
+  --c-bg:              #ECE8E1;
+  --c-primary:         #781428;
+  --c-mao:             #B41E1E;
+  --c-single:          #4A6E41;
+  --c-multiple:        #581C5A;
+  --c-primary-light:   #8c3748;
+  --c-mao-light:       #bf3f3f;
+  --c-single-bg:       #d1dacf;
+  --c-multiple-bg:     #d5c6d5;
+  --c-accent:          #581C5A;
+  --c-border:          #d9d5cf;
+  --c-tag:             #e2ded8;
+}
+/* ---- greece (11) ---- */
+[data-theme="greece"] {
+  --c-bg:              #F5F0E4;
+  --c-primary:         #3069AF;
+  --c-mao:             #BC5226;
+  --c-single:          #628030;
+  --c-multiple:        #5A2A5C;
+  --c-primary-light:   #4f7fbb;
+  --c-mao-light:       #c66b46;
+  --c-single-bg:       #d7dfcb;
+  --c-multiple-bg:     #d5c9d6;
+  --c-accent:          #5A2A5C;
+  --c-border:          #e1dcd1;
+  --c-tag:             #ebe6da;
+}
+/* ---- kanagawa (12) ---- */
+[data-theme="kanagawa"] {
+  --c-bg:              #EDE9DE;
+  --c-primary:         #0D264C;
+  --c-mao:             #1A4E84;
+  --c-single:          #96BAD2;
+  --c-multiple:        #1D1923;
+  --c-primary-light:   #314666;
+  --c-mao-light:       #3c6896;
+  --c-single-bg:       #e4edf3;
+  --c-multiple-bg:     #c6c5c8;
+  --c-accent:          #1D1923;
+  --c-border:          #dad6cc;
+  --c-tag:             #e3dfd5;
+}
+/* ---- starry-night (13) ---- */
+[data-theme="starry-night"] {
+  --c-bg:              #F0D044;
+  --c-primary:         #16321E;
+  --c-mao:             #3060A5;
+  --c-single:          #699BC8;
+  --c-multiple:        #142458;
+  --c-primary-light:   #38503f;
+  --c-mao-light:       #4f77b2;
+  --c-single-bg:       #d9e6f1;
+  --c-multiple-bg:     #c4c8d5;
+  --c-accent:          #142458;
+  --c-border:          #dcbf3e;
+  --c-tag:             #e6c741;
+}
+/* ---- a-thousand-li (14) ---- */
+[data-theme="a-thousand-li"] {
+  --c-bg:              #DACBAA;
+  --c-primary:         #30694C;
+  --c-mao:             #60946E;
+  --c-single:          #B7762D;
+  --c-multiple:        #234E70;
+  --c-primary-light:   #4f7f66;
+  --c-mao-light:       #77a483;
+  --c-single-bg:       #eddcca;
+  --c-multiple-bg:     #c8d2db;
+  --c-accent:          #234E70;
+  --c-border:          #c8ba9c;
+  --c-tag:             #d1c2a3;
+}
+/* ---- and-quiet-flows-the-don (15) ---- */
+[data-theme="and-quiet-flows-the-don"] {
+  --c-bg:              #8E7846;
+  --c-primary:         #34465A;
+  --c-mao:             #7A4224;
+  --c-single:          #765634;
+  --c-multiple:        #581A18;
+  --c-primary-light:   #526172;
+  --c-mao-light:       #8d5e44;
+  --c-single-bg:       #dcd4cc;
+  --c-multiple-bg:     #d5c5c5;
+  --c-accent:          #581A18;
+  --c-border:          #826e40;
+  --c-tag:             #887343;
+}
+/* ---- cyberpunk-edgerunners (16) ---- */
+[data-theme="cyberpunk-edgerunners"] {
+  --c-bg:              #E1FF08;
+  --c-primary:         #0F2062;
+  --c-mao:             #CD1423;
+  --c-single:          #EE1278;
+  --c-multiple:        #0E081C;
+  --c-primary-light:   #334179;
+  --c-mao-light:       #d43744;
+  --c-single-bg:       #fac3dd;
+  --c-multiple-bg:     #c2c1c6;
+  --c-accent:          #0E081C;
+  --c-border:          #cfea07;
+  --c-tag:             #d8f407;
+}
+/* ---- grand-budapest-hotel (17) ---- */
+[data-theme="grand-budapest-hotel"] {
+  --c-bg:              #F7EBD7;
+  --c-primary:         #805894;
+  --c-mao:             #B0883C;
+  --c-single:          #ED949E;
+  --c-multiple:        #8F3441;
+  --c-primary-light:   #9371a4;
+  --c-mao-light:       #bb9959;
+  --c-single-bg:       #fae4e6;
+  --c-multiple-bg:     #e3cccf;
+  --c-accent:          #8F3441;
+  --c-border:          #e3d8c5;
+  --c-tag:             #ede1ce;
+}
+/* ---- renaissance-florence (18) ---- */
+[data-theme="renaissance-florence"] {
+  --c-bg:              #EEE4D0;
+  --c-primary:         #2E4676;
+  --c-mao:             #36503C;
+  --c-single:          #AC5432;
+  --c-multiple:        #553622;
+  --c-primary-light:   #4d618a;
+  --c-mao-light:       #546a59;
+  --c-single-bg:       #ead4cb;
+  --c-multiple-bg:     #d4ccc7;
+  --c-accent:          #553622;
+  --c-border:          #dad1bf;
+  --c-tag:             #e4dac7;
+}
+/* ---- soviet-avant-garde (19) ---- */
+[data-theme="soviet-avant-garde"] {
+  --c-bg:              #E1D6CD;
+  --c-primary:         #C41C1C;
+  --c-mao:             #32508A;
+  --c-single:          #76726C;
+  --c-multiple:        #181412;
+  --c-primary-light:   #cc3e3e;
+  --c-mao-light:       #506a9b;
+  --c-single-bg:       #dcdbda;
+  --c-multiple-bg:     #c5c4c3;
+  --c-accent:          #181412;
+  --c-border:          #cfc4bc;
+  --c-tag:             #d8cdc4;
+}
+/* ---- constantinople (20) ---- */
+[data-theme="constantinople"] {
+  --c-bg:              #ECE1CF;
+  --c-primary:         #662041;
+  --c-mao:             #324C3A;
+  --c-single:          #AA7032;
+  --c-multiple:        #1E3458;
+  --c-primary-light:   #7c415d;
+  --c-mao-light:       #506657;
+  --c-single-bg:       #e9dbcb;
+  --c-multiple-bg:     #c6ccd5;
+  --c-accent:          #1E3458;
+  --c-border:          #d9cfbe;
+  --c-tag:             #e2d8c6;
+}
+/* ---- france (21) ---- */
+[data-theme="france"] {
+  --c-bg:              #E8DECD;
+  --c-primary:         #B42028;
+  --c-mao:             #8F6C94;
+  --c-single:          #7A7E84;
+  --c-multiple:        #2C4A8A;
+  --c-primary-light:   #bf4148;
+  --c-mao-light:       #9f82a4;
+  --c-single-bg:       #dddee0;
+  --c-multiple-bg:     #cad1e1;
+  --c-accent:          #2C4A8A;
+  --c-border:          #d5ccbc;
+  --c-tag:             #ded5c4;
+}
+/* ---- kyoto (22) ---- */
+[data-theme="kyoto"] {
+  --c-bg:              #EAE2D4;
+  --c-primary:         #505E44;
+  --c-mao:             #6E5440;
+  --c-single:          #747E78;
+  --c-multiple:        #222842;
+  --c-primary-light:   #6a7660;
+  --c-mao-light:       #836d5c;
+  --c-single-bg:       #dcdedd;
+  --c-multiple-bg:     #c7c9cf;
+  --c-accent:          #222842;
+  --c-border:          #d7cfc3;
+  --c-tag:             #e0d8cb;
+}
+/* ---- siamese-dream (23) ---- */
+[data-theme="siamese-dream"] {
+  --c-bg:              #EEE2D0;
+  --c-primary:         #BC6928;
+  --c-mao:             #969187;
+  --c-single:          #C69E41;
+  --c-multiple:        #2A4430;
+  --c-primary-light:   #c67f48;
+  --c-mao-light:       #a5a199;
+  --c-single-bg:       #f0e6cf;
+  --c-multiple-bg:     #c9d0cb;
+  --c-accent:          #2A4430;
+  --c-border:          #dacfbf;
+  --c-tag:             #e4d8c7;
+}
